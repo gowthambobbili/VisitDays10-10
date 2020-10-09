@@ -18,12 +18,14 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil
 CustomKeywords.'com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage'()
 
+WebUI.waitForPageLoad(0)
+
+WebUI.delay(3)
+
 WebUI.click(findTestObject('Object Repository/NacacStudentApp/HomePageElements/FavoritesInTopNav'))
 
 WebUI.waitForPageLoad(0)
 
-if(!(WebUI.verifyElementPresent(findTestObject('Object Repository/NacacStudentApp/HomePageElements/FavoriteHeaderInFavoritesPage'), 0,FailureHandling.OPTIONAL)))
-{
-	KeywordUtil.markFailed("favorites header is not present in videos page")
-}
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/HomePageElements/FavoriteHeaderInFavoritesPage'), "Favotires Exhibitors header is not shown in Favorites page")
 
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/Intercom'), "Intercom icon is not shown in Favorites page")

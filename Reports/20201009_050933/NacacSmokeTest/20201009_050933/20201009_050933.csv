@@ -1,0 +1,118 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+NacacSmokeTest,Chrome 85.0.4183.121,,,2020-10-09 05:09:42,2020-10-09 05:12:51,3m - 8.146s,FAILED
+,,,,,,,
+Test Cases/Conventions/LoginToStudentAppInNewBrowser,Chrome 85.0.4183.121,,,2020-10-09 05:09:43,2020-10-09 05:10:10,26.465s,PASSED
+Start listener action : executeRows,Chrome 85.0.4183.121,,,2020-10-09 05:09:43,2020-10-09 05:09:44,0.470s,ERROR
+com.CommonUtilities.LoginAsDifferentUserPermissions.LoginToNacacStudentAppAsStudentInNewBrowser(),Chrome 85.0.4183.121,,,2020-10-09 05:09:44,2020-10-09 05:10:07,22.889s,PASSED
+Start listener action : addFailedTCToList,Chrome 85.0.4183.121,,,2020-10-09 05:10:07,2020-10-09 05:10:08,0.218s,ERROR
+,,,,,,,
+Test Cases/Conventions/NACAC smoke test/VerifyHomePageElementsPresent,Chrome 85.0.4183.121,,,2020-10-09 05:10:10,2020-10-09 05:10:23,12.927s,PASSED
+Start listener action : executeRows,Chrome 85.0.4183.121,,,2020-10-09 05:10:10,2020-10-09 05:10:10,0.249s,ERROR
+com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(),Chrome 85.0.4183.121,,,2020-10-09 05:10:11,2020-10-09 05:10:17,5.854s,PASSED
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:10:17,2020-10-09 05:10:17,0.028s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/EventsHomePage""), ""Events top nav is not present in the home page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:17,2020-10-09 05:10:17,0.388s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/VideosButtonInTopNav""), ""Videos top nav is not present in the home page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:17,2020-10-09 05:10:18,0.630s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/FavoritesInTopNav""), ""Favorites top nav is not present in the home page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:18,2020-10-09 05:10:19,1.095s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/ItinearariesTopNav""), ""Itineraries top nav is not present in the home page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:19,2020-10-09 05:10:19,0.299s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/AccountBasicsInTopNav""), ""Account icon is not present in the home page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:19,2020-10-09 05:10:19,0.355s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/Intercom""), ""Intercom icon is not present in the home page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:19,2020-10-09 05:10:20,0.720s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/Logo""), ""Logo is not present in the home page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:20,2020-10-09 05:10:20,0.323s,PASSED
+Start listener action : addFailedTCToList,Chrome 85.0.4183.121,,,2020-10-09 05:10:20,2020-10-09 05:10:21,0.127s,ERROR
+,,,,,,,
+Test Cases/Conventions/NACAC smoke test/VerifyFavoriteElementsPresent,Chrome 85.0.4183.121,,,2020-10-09 05:10:23,2020-10-09 05:10:33,10.675s,PASSED
+Start listener action : executeRows,Chrome 85.0.4183.121,,,2020-10-09 05:10:23,2020-10-09 05:10:23,0.113s,ERROR
+com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(),Chrome 85.0.4183.121,,,2020-10-09 05:10:23,2020-10-09 05:10:26,3.347s,PASSED
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:10:26,2020-10-09 05:10:26,0.038s,PASSED
+delay(3),Chrome 85.0.4183.121,,,2020-10-09 05:10:26,2020-10-09 05:10:29,3.036s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/FavoritesInTopNav""))",Chrome 85.0.4183.121,,,2020-10-09 05:10:29,2020-10-09 05:10:30,0.557s,PASSED
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:10:30,2020-10-09 05:10:30,0.137s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/FavoriteHeaderInFavoritesPage""), ""Favotires Exhibitors header is not shown in Favorites page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:30,2020-10-09 05:10:31,0.453s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/Intercom""), ""Intercom icon is not shown in Favorites page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:31,2020-10-09 05:10:31,0.428s,PASSED
+Start listener action : addFailedTCToList,Chrome 85.0.4183.121,,,2020-10-09 05:10:31,2020-10-09 05:10:31,0.144s,ERROR
+,,,,,,,
+Test Cases/Conventions/NACAC smoke test/VerifyitinerariesPageElements,Chrome 85.0.4183.121,,,2020-10-09 05:10:33,2020-10-09 05:10:41,7.713s,PASSED
+Start listener action : executeRows,Chrome 85.0.4183.121,,,2020-10-09 05:10:33,2020-10-09 05:10:33,0.104s,ERROR
+com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(),Chrome 85.0.4183.121,,,2020-10-09 05:10:34,2020-10-09 05:10:36,2.511s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/ItinearariesTopNav""))",Chrome 85.0.4183.121,,,2020-10-09 05:10:36,2020-10-09 05:10:37,0.590s,PASSED
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:10:37,2020-10-09 05:10:37,0.158s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/My Schedule/MyMeetingsTab""), ""My Meetings tab is not present in the My Schedule page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:37,2020-10-09 05:10:38,0.729s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/My Schedule/MyFairsOption""), ""My Fairs tab is not present in the My Schedule page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:38,2020-10-09 05:10:38,0.715s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/Intercom""), ""Intercom icon is not present in the My Schedule page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:38,2020-10-09 05:10:39,0.489s,PASSED
+Start listener action : addFailedTCToList,Chrome 85.0.4183.121,,,2020-10-09 05:10:39,2020-10-09 05:10:39,0.111s,ERROR
+,,,,,,,
+Test Cases/Conventions/NACAC smoke test/VerifyVideosPageElementsPresent,Chrome 85.0.4183.121,,,2020-10-09 05:10:41,2020-10-09 05:11:01,20.251s,PASSED
+Start listener action : executeRows,Chrome 85.0.4183.121,,,2020-10-09 05:10:41,2020-10-09 05:10:41,0.115s,ERROR
+com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(),Chrome 85.0.4183.121,,,2020-10-09 05:10:41,2020-10-09 05:10:45,3.440s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/VideosButtonInTopNav""))",Chrome 85.0.4183.121,,,2020-10-09 05:10:45,2020-10-09 05:10:45,0.679s,PASSED
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:10:45,2020-10-09 05:10:46,0.171s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/ExploreVideosHeaderInVideosPage""), ""Explore Videos header is not present in Videos page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:46,2020-10-09 05:10:46,0.617s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/Videos/FIltersIcon""), ""Filters icon is not present in Videos page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:46,2020-10-09 05:10:50,4.123s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/Intercom""), ""Intercom icon is not present in the Videos page"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:50,2020-10-09 05:10:51,0.304s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/Videos/FIltersIcon""))",Chrome 85.0.4183.121,,,2020-10-09 05:10:51,2020-10-09 05:10:51,0.790s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/Filters/VideosFiltersHeader""), ""When click Filters icon in Videos page, the Filters modal is not opened"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:51,2020-10-09 05:10:52,0.549s,PASSED
+com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyVideoFiltersModal(),Chrome 85.0.4183.121,,,2020-10-09 05:10:52,2020-10-09 05:10:58,5.919s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/Filters/FiltersCloseButton""))",Chrome 85.0.4183.121,,,2020-10-09 05:10:58,2020-10-09 05:10:58,0.469s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementNotPresentStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/Filters/VideosFiltersHeader""), ""When click Close button in Videos filters modal, the modal is not getting closed"")",Chrome 85.0.4183.121,,,2020-10-09 05:10:58,2020-10-09 05:10:59,0.657s,PASSED
+Start listener action : addFailedTCToList,Chrome 85.0.4183.121,,,2020-10-09 05:10:59,2020-10-09 05:10:59,0.130s,ERROR
+,,,,,,,
+Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage,Chrome 85.0.4183.121,,,2020-10-09 05:11:01,2020-10-09 05:11:32,30.526s,PASSED
+Start listener action : executeRows,Chrome 85.0.4183.121,,,2020-10-09 05:11:01,2020-10-09 05:11:01,0.128s,ERROR
+com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(),Chrome 85.0.4183.121,,,2020-10-09 05:11:02,2020-10-09 05:11:06,4.743s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/AccountBasicsInTopNav""))",Chrome 85.0.4183.121,,,2020-10-09 05:11:06,2020-10-09 05:11:08,1.247s,PASSED
+waitForPageLoad(10),Chrome 85.0.4183.121,,,2020-10-09 05:11:08,2020-10-09 05:11:08,0.161s,PASSED
+com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyMyAccountPage(),Chrome 85.0.4183.121,,,2020-10-09 05:11:08,2020-10-09 05:11:11,2.747s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/PersonalInfoTabInAccountbasicspage""), ""Personal Info tab is not present in the Account page"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:11,2020-10-09 05:11:11,0.504s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/PersonalInfoTabInAccountbasicspage""))",Chrome 85.0.4183.121,,,2020-10-09 05:11:11,2020-10-09 05:11:12,0.375s,PASSED
+com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyPersonalInfoPage(),Chrome 85.0.4183.121,,,2020-10-09 05:11:12,2020-10-09 05:11:26,14.061s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/personaldetails page/NotificationstabInPersonalDeatailsPage""), ""Notifications tab is not present in the Account page"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:26,2020-10-09 05:11:26,0.294s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/personaldetails page/NotificationstabInPersonalDeatailsPage""))",Chrome 85.0.4183.121,,,2020-10-09 05:11:26,2020-10-09 05:11:26,0.373s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/Account/PreferenceHeader""), ""Preferences header is not present in the Notifications tab"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:26,2020-10-09 05:11:27,1.203s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/Account/EmailsCheckbox""), ""Emails checkbox is not present in the Notifications tab"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:27,2020-10-09 05:11:28,0.850s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/Account/TextMessagesCheckbox""), ""Text Messages checkbox is not present in the Notifications tab"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:28,2020-10-09 05:11:29,0.928s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/Intercom""), ""Intercom icon is not present in the Notifications tab"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:29,2020-10-09 05:11:30,0.318s,PASSED
+Start listener action : addFailedTCToList,Chrome 85.0.4183.121,,,2020-10-09 05:11:30,2020-10-09 05:11:30,0.138s,ERROR
+,,,,,,,
+Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication,Chrome 85.0.4183.121,,,2020-10-09 05:11:32,2020-10-09 05:11:42,10.717s,FAILED
+Start listener action : executeRows,Chrome 85.0.4183.121,,,2020-10-09 05:11:32,2020-10-09 05:11:32,0.215s,ERROR
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:11:32,2020-10-09 05:11:32,0.020s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/EventsHomePage""), 0)",Chrome 85.0.4183.121,,,2020-10-09 05:11:32,2020-10-09 05:11:33,0.361s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/EventsHomePage""))",Chrome 85.0.4183.121,,,2020-10-09 05:11:33,2020-10-09 05:11:33,0.350s,PASSED
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:11:33,2020-10-09 05:11:33,0.015s,PASSED
+delay(3),Chrome 85.0.4183.121,,,2020-10-09 05:11:33,2020-10-09 05:11:36,3.004s,PASSED
+println(getUrl()),Chrome 85.0.4183.121,,,2020-10-09 05:11:36,2020-10-09 05:11:36,0.098s,PASSED
+"println(studenturl + ""events"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:36,2020-10-09 05:11:36,0.001s,PASSED
+"com.CommonUtilities.Verifications.VerifyTextMatch(getUrl(), studenturl + ""events"", ""When click Events top nav the Events page not opened"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:36,2020-10-09 05:11:36,0.052s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/Events/WithSupportFromHeader""), ""Sponsers header is not shown in events page"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:36,2020-10-09 05:11:37,0.324s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/VideosButtonInTopNav""))",Chrome 85.0.4183.121,,,2020-10-09 05:11:37,2020-10-09 05:11:37,0.338s,PASSED
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:11:37,2020-10-09 05:11:37,0.020s,PASSED
+"com.CommonUtilities.Verifications.VerifyTextMatch(getUrl(), studenturl + ""videos"", ""When click Videos top nav the Events page not opened"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:37,2020-10-09 05:11:37,0.115s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/Videos/ExploreVideosHeader""), ""Explore Videos header is not shown in Videos page"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:37,2020-10-09 05:11:38,0.672s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/FavoritesInTopNav""))",Chrome 85.0.4183.121,,,2020-10-09 05:11:38,2020-10-09 05:11:38,0.372s,PASSED
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:11:38,2020-10-09 05:11:38,0.102s,PASSED
+"com.CommonUtilities.Verifications.VerifyTextMatch(getUrl(), studenturl + ""favorites"", ""When click Favorites top nav the favorites page not opened"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:38,2020-10-09 05:11:38,0.021s,PASSED
+"com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/FavoriteHeaderInFavoritesPage""), ""Favorites header is not shown in Favorites page"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:38,2020-10-09 05:11:39,0.406s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/ItinearariesTopNav""))",Chrome 85.0.4183.121,,,2020-10-09 05:11:39,2020-10-09 05:11:39,0.347s,PASSED
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:11:39,2020-10-09 05:11:39,0.019s,PASSED
+"com.CommonUtilities.Verifications.VerifyTextMatch(getUrl(), studenturl + ""itineraries?activeTab=0"", ""When click My Schedule top nav the page is not opened"")",Chrome 85.0.4183.121,,,2020-10-09 05:11:39,2020-10-09 05:11:40,1.331s,FAILED
+Start listener action : addFailedTCToList,Chrome 85.0.4183.121,,,2020-10-09 05:11:40,2020-10-09 05:11:40,0.149s,ERROR
+Video,Chrome 85.0.4183.121,,,2020-10-09 05:11:42,2020-10-09 05:11:42,0.000s,PASSED
+,,,,,,,
+Test Cases/Conventions/NACAC smoke test/CollegesPageVerification,Chrome 85.0.4183.121,,,2020-10-09 05:11:42,2020-10-09 05:12:18,35.826s,PASSED
+Start listener action : executeRows,Chrome 85.0.4183.121,,,2020-10-09 05:11:42,2020-10-09 05:11:43,0.105s,ERROR
+com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(),Chrome 85.0.4183.121,,,2020-10-09 05:11:43,2020-10-09 05:11:46,3.061s,PASSED
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:11:46,2020-10-09 05:11:46,0.061s,PASSED
+delay(2),Chrome 85.0.4183.121,,,2020-10-09 05:11:46,2020-10-09 05:11:48,2.001s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/EventsHomePage""))",Chrome 85.0.4183.121,,,2020-10-09 05:11:48,2020-10-09 05:11:48,0.332s,PASSED
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:11:48,2020-10-09 05:11:48,0.015s,PASSED
+"if (verifyElementPresent(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/FirstConventionName""), 0, OPTIONAL))",Chrome 85.0.4183.121,,,2020-10-09 05:11:48,2020-10-09 05:12:16,27.857s,PASSED
+Start listener action : addFailedTCToList,Chrome 85.0.4183.121,,,2020-10-09 05:12:16,2020-10-09 05:12:16,0.134s,ERROR
+,,,,,,,
+Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification,Chrome 85.0.4183.121,,,2020-10-09 05:12:18,2020-10-09 05:12:51,32.209s,PASSED
+Start listener action : executeRows,Chrome 85.0.4183.121,,,2020-10-09 05:12:18,2020-10-09 05:12:18,0.108s,ERROR
+com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(),Chrome 85.0.4183.121,,,2020-10-09 05:12:18,2020-10-09 05:12:22,3.506s,PASSED
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:12:22,2020-10-09 05:12:22,0.018s,PASSED
+delay(2),Chrome 85.0.4183.121,,,2020-10-09 05:12:22,2020-10-09 05:12:24,2.004s,PASSED
+"click(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/EventsHomePage""))",Chrome 85.0.4183.121,,,2020-10-09 05:12:24,2020-10-09 05:12:24,0.346s,PASSED
+waitForPageLoad(0),Chrome 85.0.4183.121,,,2020-10-09 05:12:24,2020-10-09 05:12:24,0.042s,PASSED
+"if (verifyElementPresent(findTestObject(""Object Repository/NacacStudentApp/HomePageElements/FirstConventionName""), 0, OPTIONAL))",Chrome 85.0.4183.121,,,2020-10-09 05:12:24,2020-10-09 05:12:48,23.970s,PASSED
+Start listener action : addFailedTCToList,Chrome 85.0.4183.121,,,2020-10-09 05:12:48,2020-10-09 05:12:48,0.120s,ERROR

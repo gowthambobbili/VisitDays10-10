@@ -22,12 +22,10 @@ WebUI.click(findTestObject('Object Repository/NacacStudentApp/HomePageElements/I
 
 WebUI.waitForPageLoad(0)
 
-if(!(WebUI.verifyElementPresent(findTestObject('Object Repository/NacacStudentApp/HomePageElements/EventsOrMeetingSwitcherNavInItinenariespage'), 0,FailureHandling.OPTIONAL)))
-{
-	KeywordUtil.markFailed("itinenaries page is not loaded")
-}
-WebUI.verifyElementPresent(findTestObject('Object Repository/NacacStudentApp/HomePageElements/EmptyStateVerificationInMyMeetingsPage'), 3, FailureHandling.OPTIONAL)
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/My Schedule/MyMeetingsTab'), "My Meetings tab is not present in the My Schedule page")
 
-WebUI.click(findTestObject('Object Repository/NacacStudentApp/HomePageElements/MyMeetingsOptionInItinenariesPage'))
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/My Schedule/MyFairsOption'), "My Fairs tab is not present in the My Schedule page")
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/NacacStudentApp/HomePageElements/EmptyStateVerificationInMyMeetingsPage'), 3, FailureHandling.OPTIONAL)
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/Intercom'), "Intercom icon is not present in the My Schedule page")
+
+

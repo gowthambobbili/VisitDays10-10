@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;right-nav-desktop css-4cffwv&quot;]//a[@href=&quot;/events&quot;]</value>
+         <value>//a[@href=&quot;/events&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

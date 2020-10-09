@@ -16,15 +16,26 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil
+
 CustomKeywords.'com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage'()
 
 WebUI.waitForPageLoad(0)
 
-if(!(WebUI.verifyElementPresent(findTestObject('Object Repository/NacacStudentApp/HomePageElements/UpcomingOptionInHomePage'), 0,FailureHandling.OPTIONAL)))
-{
-	KeywordUtil.markFailed("upcoming option header is not present in events home page")
-}
-if(!(WebUI.verifyElementPresent(findTestObject('Object Repository/NacacStudentApp/HomePageElements/PoweredByVisitdaysLogo'), 0, FailureHandling.STOP_ON_FAILURE)))
-{
-	KeywordUtil.markFailed("visitdays logo is not present in footer of events home page")
-}
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/HomePageElements/EventsHomePage'), "Events top nav is not present in the home page")
+
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/HomePageElements/VideosButtonInTopNav'), "Videos top nav is not present in the home page")
+
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/HomePageElements/FavoritesInTopNav'), "Favorites top nav is not present in the home page")
+
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/HomePageElements/ItinearariesTopNav'), "Itineraries top nav is not present in the home page")
+
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/HomePageElements/AccountBasicsInTopNav'), "Account icon is not present in the home page")
+
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/Intercom'), "Intercom icon is not present in the home page")
+
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/HomePageElements/Logo'), "Logo is not present in the home page")
+
+
+
+
+

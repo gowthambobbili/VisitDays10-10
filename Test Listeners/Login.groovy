@@ -24,66 +24,69 @@ import com.kms.katalon.core.context.TestSuiteContext
 
 class Login {
 
-	//Login as Admin user to staging
-//   @BeforeTestCase
-	def loginBeforeTestCaseAsAdmin(TestCaseContext testCaseContext)
-	{
+	/*
+	 * Login as Admin user to staging
+	 */
+//	   @BeforeTestCase
+	def loginBeforeTestCaseAsAdmin(TestCaseContext testCaseContext){
+		
 		CustomKeywords.'com.CommonUtilities.LoginAsDifferentUserPermissions.LoginAsSchoolAdmin'()
 	}
 
-	//***********************************************************
-
-	//Login as Admin user to admin.visitdays.com
+	
+	/*
+	 * Login as Admin user to admin.visitdays.com
+	 */
 	//@BeforeTestCase
-	def loginBeforeTestCaseAsAdminToAdminVisitDays(TestCaseContext testCaseContext)
-	{
+	def loginBeforeTestCaseAsAdminToAdminVisitDays(TestCaseContext testCaseContext){
+		
 		CustomKeywords.'com.CommonUtilities.LoginAsDifferentUserPermissions.LoginAsAdminUserToAdminVisitDays'()
 	}
 
-	//***********************************************************
-
-	//Login as Editor User to staging
+	
+	/*
+	 * Login as Editor User to staging
+	 */
 	//@BeforeTestCase
-	def loginBeforeTestCaseAsEditor(TestCaseContext testCaseContext)
-	{
+	def loginBeforeTestCaseAsEditor(TestCaseContext testCaseContext){
+
 		CustomKeywords.'com.CommonUtilities.LoginAsDifferentUserPermissions.LoginAsEditorUser'()
 	}
 
-	//*****************************************************************
-	//Login as Editor User to admin.visitdays.com
+	
+	/*
+	 * Login as Editor User to admin.visitdays.com
+	 */
 	//@BeforeTestCase
-	def loginBeforeTestCaseAsEditorToAminVisitDays(TestCaseContext testCaseContext)
-	{
+	def loginBeforeTestCaseAsEditorToAminVisitDays(TestCaseContext testCaseContext){
+
 		CustomKeywords.'com.CommonUtilities.LoginAsDifferentUserPermissions.LoginAsEditorUserToAdminVisitDays'()
 	}
 
-	//********************************************************************
-
-	//Login as Read Only User to staging
+	
+	/*
+	 * Login as Read Only User to staging
+	 */
 	//@BeforeTestCase
-	def loginBeforeTestCaseAsReadOnlyUser(TestCaseContext testCaseContext)
-	{
+	def loginBeforeTestCaseAsReadOnlyUser(TestCaseContext testCaseContext){
+
 		CustomKeywords.'com.CommonUtilities.LoginAsDifferentUserPermissions.LoginAsReadOnlyUser'()
 	}
 
-	//**********************************************************************
-
-	//Login as Read Only User to admin.visitdays.com
+	
+	/*
+	 * Login as Read Only User to admin.visitdays.com
+	 */
 	//@BeforeTestCase
-	def loginBeforeTestCaseAsReadOnlyUserToAdminVisitDays(TestCaseContext testCaseContext)
-	{
+	def loginBeforeTestCaseAsReadOnlyUserToAdminVisitDays(TestCaseContext testCaseContext){
+
 		CustomKeywords.'com.CommonUtilities.LoginAsDifferentUserPermissions.LoginAsReadOnlyUserToAdminVisitDays'()
 	}
 
-	//**************************************************************************
-
+	
 	//@AfterTestCase
-	def CloseBrowser(TestCaseContext testCaseContext)
-	{
-		//		if(WebUI.verifyElementNotPresent(findTestObject, 0, FailureHandling))
-		//		{
-		//
-		//		}
+	def CloseBrowser(TestCaseContext testCaseContext){
+
 		WebUI.closeBrowser()
 	}
 

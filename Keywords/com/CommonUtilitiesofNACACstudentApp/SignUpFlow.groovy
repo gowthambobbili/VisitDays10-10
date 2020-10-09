@@ -99,7 +99,7 @@ public class SignUpFlow {
 	def selectApplicantType() {
 
 		WebUI.scrollToElement(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/FirstYearCollegeStudent'),0)
-		
+
 		WebUI.click(findTestObject('Object Repository/NacacStudentApp/SignUpPage/InternationalStudent'))
 
 		WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/High school graduation year'),"2016")

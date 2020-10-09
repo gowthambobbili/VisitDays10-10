@@ -45,6 +45,24 @@
       <guid>c2598fb9-5fe7-4bfe-9829-1dd3a46ad28a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPageElementsArePresent</testCaseId>
+      <testCaseId>Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>71147839-fd95-4c5e-82ab-edb6fdd8142c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f8ccc658-967d-49be-bb19-4935bc95bfd5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Conventions/NACAC smoke test/CollegesPageVerification</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0590b248-eeb4-4980-a4f8-220453390bf4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

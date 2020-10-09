@@ -20,7 +20,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.testobject.TestObject
+//import com.kms.katalon.core.testobject.TestObject
 import java.text.SimpleDateFormat;
 
 import internal.GlobalVariable
@@ -40,7 +40,7 @@ public class CreateMeeting {
 	def dropDate=(ft2.format(dropDownFormat)).toString()
 
 	String meetdates=(ft.format(dNow)).toString()
-	
+
 	def meetdate=meetdates.substring(0,2)
 
 	def zoomId="https://zoom.us/j/12345678"
@@ -48,19 +48,19 @@ public class CreateMeeting {
 	@Keyword
 	def getConvention() {
 
-//		WebUI.click(findTestObject('Object Repository/HomePageElements/PersonIcon'))
-//
-//		WebUI.click(findTestObject('Object Repository/HomePageElements/NacacConventionslink'))
-//
-//		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/Conventionsleftnav'))
-//
-//		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/CreateButtonInLiveSessions'))
-//
-//		WebUI.waitForPageLoad(5)
-//
-//		def ConventionName=WebUI.getText(findTestObject('Object Repository/ConventionsPageAdmin/getNameOfFirstConvention'))
-		
-//		return ConventionName
+		//		WebUI.click(findTestObject('Object Repository/HomePageElements/PersonIcon'))
+		//
+		//		WebUI.click(findTestObject('Object Repository/HomePageElements/NacacConventionslink'))
+		//
+		//		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/Conventionsleftnav'))
+		//
+		//		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/CreateButtonInLiveSessions'))
+		//
+		//		WebUI.waitForPageLoad(5)
+		//
+		//		def ConventionName=WebUI.getText(findTestObject('Object Repository/ConventionsPageAdmin/getNameOfFirstConvention'))
+
+		//		return ConventionName
 
 		return GlobalVariable.createdConventionName
 	}
@@ -90,9 +90,9 @@ public class CreateMeeting {
 	@Keyword
 	def enterMeetingDetailsAndTime() {
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/MeetingsLeftNav'))
-		
+
 		WebUI.waitForPageLoad(5)
-		
+
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/AddAvailabilityButton'))
 
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/AssigneeDropDownButtonInMeetings'))

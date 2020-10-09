@@ -5,13 +5,25 @@
 
 import java.lang.String
 
+import java.util.ArrayList
+
+import java.util.HashMap
+
+import java.util.List
+
 import com.kms.katalon.core.testobject.TestObject
 
 import java.util.Map
 
-import java.util.List
-
 import com.sun.org.apache.xpath.internal.operations.String
+
+import com.kms.katalon.core.model.FailureHandling
+
+import org.openqa.selenium.WebElement
+
+import kms.turing.katalon.plugins.helper.table.WebTableHelper.CellTextOptions
+
+import kms.turing.katalon.plugins.helper.XPathHelper.CompareOptions
 
 import java.lang.Boolean
 
@@ -28,6 +40,99 @@ def static "com.CommonUtilities.SortArrayElements.refreshBrowser"(
     (new com.CommonUtilities.SortArrayElements()).refreshBrowser(
         	numebrofelements
          , 	xpath)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.createFile"(
+    	String fullPathWithoutExtension	
+     , 	String template	
+     , 	String extension	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).createFile(
+        	fullPathWithoutExtension
+         , 	template
+         , 	extension)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.deleteTestSuite"(
+    	String testSuiteName	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).deleteTestSuite(
+        	testSuiteName)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList"(
+    	String text	
+     , 	java.util.ArrayList<String> list	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).isStringBelongToList(
+        	text
+         , 	list)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.createNameForNewSuite"(
+    	String oldTestSuitePath	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).createNameForNewSuite(
+        	oldTestSuitePath)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.replaceFailedRowsForBindingData"(
+    	java.util.HashMap<String, List> listFailedRowsBelongToTC	
+     , 	String testCaseTemp	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).replaceFailedRowsForBindingData(
+        	listFailedRowsBelongToTC
+         , 	testCaseTemp)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.createConsoleModeFile"(
+    	String relativeTestSuitePath	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).createConsoleModeFile(
+        	relativeTestSuitePath)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.replaceTSTemplateWithListNewTC"(
+    	String oldTSTemplate	
+     , 	String newTCList	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).replaceTSTemplateWithListNewTC(
+        	oldTSTemplate
+         , 	newTCList)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.getProjectFileName"() {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).getProjectFileName()
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.getListExecutedRows"(
+    	String testCaseId	
+     , 	String iterationType	
+     , 	String iterationValue	
+     , 	int dataTotalRows	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).getListExecutedRows(
+        	testCaseId
+         , 	iterationType
+         , 	iterationValue
+         , 	dataTotalRows)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.getExecutedBrowser"() {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).getExecutedBrowser()
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.removeTCPassedAndReplaceFailedRows"(
+    	String oldTSTemplate	
+     , 	List listFailTestCases	
+     , 	java.util.HashMap<String, List> listFailedRowsBelongToTC	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).removeTCPassedAndReplaceFailedRows(
+        	oldTSTemplate
+         , 	listFailTestCases
+         , 	listFailedRowsBelongToTC)
 }
 
 
@@ -157,6 +262,31 @@ def static "com.CommonUtilities.SelfServeUtilities.SetSurvey_PerformancedFlagToT
 
 def static "com.CommonUtilities.Testkeywords.testmethod"() {
     (new com.CommonUtilities.Testkeywords()).testmethod()
+}
+
+
+def static "com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyPersonalInfoPage"() {
+    (new com.CommonUtilitiesofNACACstudentApp.SmokeTests()).verifyPersonalInfoPage()
+}
+
+
+def static "com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyMyAccountPage"() {
+    (new com.CommonUtilitiesofNACACstudentApp.SmokeTests()).verifyMyAccountPage()
+}
+
+
+def static "com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyVideoFiltersModal"() {
+    (new com.CommonUtilitiesofNACACstudentApp.SmokeTests()).verifyVideoFiltersModal()
+}
+
+
+def static "com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyCollegesPage"() {
+    (new com.CommonUtilitiesofNACACstudentApp.SmokeTests()).verifyCollegesPage()
+}
+
+
+def static "com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyLiveSessionsPage"() {
+    (new com.CommonUtilitiesofNACACstudentApp.SmokeTests()).verifyLiveSessionsPage()
 }
 
 
@@ -751,33 +881,6 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDuration"(
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.addDays"(
-    	String stringDate	
-     , 	String dateFormat	
-     , 	int amount	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).addDays(
-        	stringDate
-         , 	dateFormat
-         , 	amount)
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDefaultTimeZone"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getDefaultTimeZone()
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPreviousDateTime"(
-    	int noOfDays	
-     , 	String timeZoneId	
-     , 	String dateTimeFormat	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPreviousDateTime(
-        	noOfDays
-         , 	timeZoneId
-         , 	dateTimeFormat)
-}
-
-
 def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDateTime"(
     	String timeZoneId	
      , 	String dateTimeFormat	) {
@@ -787,11 +890,11 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDateTime"
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getFutureDateTime"(
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPreviousDateTime"(
     	int noOfDays	
      , 	String timeZoneId	
      , 	String dateTimeFormat	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getFutureDateTime(
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPreviousDateTime(
         	noOfDays
          , 	timeZoneId
          , 	dateTimeFormat)
@@ -814,24 +917,14 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.convertString2Date"
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.formatStringDate"(
-    	String value	
-     , 	String currentFormat	
-     , 	String newFormat	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).formatStringDate(
-        	value
-         , 	currentFormat
-         , 	newFormat)
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentMonth"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentMonth()
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDate"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentDate()
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getFutureDateTime"(
+    	int noOfDays	
+     , 	String timeZoneId	
+     , 	String dateTimeFormat	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getFutureDateTime(
+        	noOfDays
+         , 	timeZoneId
+         , 	dateTimeFormat)
 }
 
 
@@ -853,8 +946,45 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPastTime"(
 }
 
 
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.formatStringDate"(
+    	String value	
+     , 	String currentFormat	
+     , 	String newFormat	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).formatStringDate(
+        	value
+         , 	currentFormat
+         , 	newFormat)
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDate"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentDate()
+}
+
+
 def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentYear"() {
     (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentYear()
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentMonth"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentMonth()
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDefaultTimeZone"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getDefaultTimeZone()
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.addDays"(
+    	String stringDate	
+     , 	String dateFormat	
+     , 	int amount	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).addDays(
+        	stringDate
+         , 	dateFormat
+         , 	amount)
 }
 
 
@@ -1547,6 +1677,285 @@ def static "com.CommonUtilities.CreationOperations.CreateOffCampusVisitWithInsta
 }
 
 
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
+    	List columnHeaders	
+     , 	int timeout	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
+        	columnHeaders
+         , 	timeout)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
+    	List columnHeaders	
+     , 	int timeout	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
+        	columnHeaders
+         , 	timeout
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
+    	List columnHeaders	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
+        	columnHeaders)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyRowDisplayed"(
+    	WebElement table	
+     , 	Map cellsInfo	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyRowDisplayed(
+        	table
+         , 	cellsInfo
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyRowDisplayed"(
+    	WebElement table	
+     , 	Map cellsInfo	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyRowDisplayed(
+        	table
+         , 	cellsInfo)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByValueAndColHeader"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	String cellValue	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByValueAndColHeader(
+        	table
+         , 	columnHeader
+         , 	cellValue)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByValueAndColHeader"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	String cellValue	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByValueAndColHeader(
+        	table
+         , 	columnHeader
+         , 	cellValue
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByHeader"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByHeader(
+        	table
+         , 	columnHeader
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByHeader"(
+    	WebElement table	
+     , 	String columnHeader	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByHeader(
+        	table
+         , 	columnHeader)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getCellsValueByColumnHeader"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getCellsValueByColumnHeader(
+        	table
+         , 	columnHeader
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getCellsValueByColumnHeader"(
+    	WebElement table	
+     , 	String columnHeader	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getCellsValueByColumnHeader(
+        	table
+         , 	columnHeader)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByHeaderAndCellsInfo"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	Map cellsInfo	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByHeaderAndCellsInfo(
+        	table
+         , 	columnHeader
+         , 	cellsInfo
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByHeaderAndCellsInfo"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	Map cellsInfo	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByHeaderAndCellsInfo(
+        	table
+         , 	columnHeader
+         , 	cellsInfo)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getRowIndexByCellsInfo"(
+    	WebElement table	
+     , 	Map cellsInfo	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getRowIndexByCellsInfo(
+        	table
+         , 	cellsInfo
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getRowIndexByCellsInfo"(
+    	WebElement table	
+     , 	Map cellsInfo	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getRowIndexByCellsInfo(
+        	table
+         , 	cellsInfo)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByAttribute"(
+    	WebElement table	
+     , 	String attribute	
+     , 	String value	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByAttribute(
+        	table
+         , 	attribute
+         , 	value)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByAttribute"(
+    	WebElement table	
+     , 	String attribute	
+     , 	String value	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByAttribute(
+        	table
+         , 	attribute
+         , 	value
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByIndexes"(
+    	WebElement table	
+     , 	int columnIndex	
+     , 	int rowIndex	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByIndexes(
+        	table
+         , 	columnIndex
+         , 	rowIndex)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByIndexes"(
+    	WebElement table	
+     , 	int columnIndex	
+     , 	int rowIndex	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByIndexes(
+        	table
+         , 	columnIndex
+         , 	rowIndex
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	String text	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
+        	table
+         , 	columnHeader
+         , 	text)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	String text	
+     , 	CellTextOptions textOption	
+     , 	CompareOptions compareOption	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
+        	table
+         , 	columnHeader
+         , 	text
+         , 	textOption
+         , 	compareOption
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	String text	
+     , 	CellTextOptions textOption	
+     , 	CompareOptions compareOption	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
+        	table
+         , 	columnHeader
+         , 	text
+         , 	textOption
+         , 	compareOption)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	String text	
+     , 	CellTextOptions textOption	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
+        	table
+         , 	columnHeader
+         , 	text
+         , 	textOption)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.clickOnColumn"(
+    	WebElement table	
+     , 	String columnHeader	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).clickOnColumn(
+        	table
+         , 	columnHeader)
+}
+
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.clickOnColumn"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).clickOnColumn(
+        	table
+         , 	columnHeader
+         , 	flowControl)
+}
+
+
 def static "com.CommonUtilities.MultipleObjectOperations.GetVisitTypesFromVisitTypeDropDownWhileCreating"(
     	String VisitType	) {
     (new com.CommonUtilities.MultipleObjectOperations()).GetVisitTypesFromVisitTypeDropDownWhileCreating(
@@ -1944,6 +2353,23 @@ def static "com.CommonUtilities.SurveyMethods.selectVisitTypeRadioButton"() {
 }
 
 
+def static "com.katalon.plugin.keyword.calendar.SetDateCalendarKeyword.setDate"(
+    	TestObject to	
+     , 	int day	
+     , 	int month	
+     , 	int year	
+     , 	int slideTimeOut	
+     , 	FailureHandling flowControl	) {
+    (new com.katalon.plugin.keyword.calendar.SetDateCalendarKeyword()).setDate(
+        	to
+         , 	day
+         , 	month
+         , 	year
+         , 	slideTimeOut
+         , 	flowControl)
+}
+
+
 def static "com.CommonUtilities.CreateconventionUsingSelfServeTool.GoToCreateConventionPage"() {
     (new com.CommonUtilities.CreateconventionUsingSelfServeTool()).GoToCreateConventionPage()
 }
@@ -1997,13 +2423,6 @@ def static "com.CommonUtilities.AddQuestion.getRandomQuestionName"() {
 }
 
 
-def static "com.CommonUtilities.Testing.CreateDailyVisitVisitWithStartTimeWithIn30Minutes"(
-    	String VisitType	) {
-    (new com.CommonUtilities.Testing()).CreateDailyVisitVisitWithStartTimeWithIn30Minutes(
-        	VisitType)
-}
-
-
 def static "com.CommonUtilities.CreateLiveSession.selectConvention"() {
     (new com.CommonUtilities.CreateLiveSession()).selectConvention()
 }
@@ -2021,6 +2440,13 @@ def static "com.CommonUtilities.CreateLiveSession.enterLiveSessionDetailsAndFutu
 
 def static "com.CommonUtilities.CreateLiveSession.enterZoomIdAndAddAssigne"() {
     (new com.CommonUtilities.CreateLiveSession()).enterZoomIdAndAddAssigne()
+}
+
+
+def static "com.CommonUtilities.Testing.CreateDailyVisitVisitWithStartTimeWithIn30Minutes"(
+    	String VisitType	) {
+    (new com.CommonUtilities.Testing()).CreateDailyVisitVisitWithStartTimeWithIn30Minutes(
+        	VisitType)
 }
 
 

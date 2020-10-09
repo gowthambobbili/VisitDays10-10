@@ -23,7 +23,19 @@ WebUI.click(findTestObject('Object Repository/NacacStudentApp/HomePageElements/V
 
 WebUI.waitForPageLoad(0)
 
-if(!(WebUI.verifyElementPresent(findTestObject('Object Repository/NacacStudentApp/HomePageElements/ExploreVideosHeaderInVideosPage'), 0,FailureHandling.OPTIONAL)))
-{
-	KeywordUtil.markFailed("Explore videos header is not present in videos page")
-}
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/HomePageElements/ExploreVideosHeaderInVideosPage'), "Explore Videos header is not present in Videos page")
+
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/Videos/FIltersIcon'), "Filters icon is not present in Videos page")
+
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/Intercom'), "Intercom icon is not present in the Videos page")
+
+WebUI.click(findTestObject('Object Repository/NacacStudentApp/Videos/FIltersIcon'))
+
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/Filters/VideosFiltersHeader'), "When click Filters icon in Videos page, the Filters modal is not opened")
+
+CustomKeywords.'com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyVideoFiltersModal'()
+
+WebUI.click(findTestObject('Object Repository/NacacStudentApp/Filters/FiltersCloseButton'))
+
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyElementNotPresentStopExecutionIfFailed'(findTestObject('Object Repository/NacacStudentApp/Filters/VideosFiltersHeader'), "When click Close button in Videos filters modal, the modal is not getting closed")
+

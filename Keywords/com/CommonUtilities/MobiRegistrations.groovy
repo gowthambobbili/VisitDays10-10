@@ -32,9 +32,9 @@ import com.kms.katalon.core.testobject.TestObjectProperty
 import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
-import org.openqa.selenium.WebElement as WebElement
-import org.openqa.selenium.WebDriver as WebDriver
-import org.openqa.selenium.By as By
+//import org.openqa.selenium.WebElement as WebElement
+//import org.openqa.selenium.WebDriver as WebDriver
+//import org.openqa.selenium.By as By
 
 
 
@@ -193,10 +193,10 @@ class MobiRegistrations {
 
 		WebUI.click(findTestObject('Add Attendee/FirstOptionInAcademicInterests'))
 
-//		WebUI.click(findTestObject('Add Attendee/OptinalObjectInRegistrationPage'))
-//
-//		WebUI.click(findTestObject('Add Attendee/OptionalTestDropDownSelect'))
-//
+		//		WebUI.click(findTestObject('Add Attendee/OptinalObjectInRegistrationPage'))
+		//
+		//		WebUI.click(findTestObject('Add Attendee/OptionalTestDropDownSelect'))
+		//
 
 		WebUI.click(findTestObject('Add Attendee/CompleteButtonInAddAttendee'))
 
@@ -277,9 +277,9 @@ class MobiRegistrations {
 
 		WebUI.sendKeys(findTestObject('Add Attendee/Group/OrganizationNameQuestionInGropupRegistration'), OrgName)
 
-//		WebUI.click(findTestObject('Add Attendee/OptinalObjectInRegistrationPage'))
-//
-//		WebUI.click(findTestObject('Add Attendee/OptionalTestDropDownSelect'))
+		//		WebUI.click(findTestObject('Add Attendee/OptinalObjectInRegistrationPage'))
+		//
+		//		WebUI.click(findTestObject('Add Attendee/OptionalTestDropDownSelect'))
 
 
 		WebUI.click(findTestObject('Add Attendee/CompleteButtonInAddAttendee'))
@@ -358,10 +358,10 @@ class MobiRegistrations {
 
 		WebUI.sendKeys(findTestObject('Add Attendee/Group/OrganizationNameQuestionInGropupRegistration'), OrgName)
 
-//		WebUI.click(findTestObject('Add Attendee/OptinalObjectInRegistrationPage'))
-//
-//		WebUI.click(findTestObject('Add Attendee/OptionalTestDropDownSelect'))
-//
+		//		WebUI.click(findTestObject('Add Attendee/OptinalObjectInRegistrationPage'))
+		//
+		//		WebUI.click(findTestObject('Add Attendee/OptionalTestDropDownSelect'))
+		//
 
 		WebUI.click(findTestObject('Add Attendee/CompleteButtonInAddAttendee'))
 

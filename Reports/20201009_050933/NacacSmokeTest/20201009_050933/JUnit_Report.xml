@@ -1,0 +1,1986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="NacacSmokeTest" time="191.391" tests="9" failures="1" errors="0">
+   <testsuite name="NacacSmokeTest" tests="9" failures="1" errors="0" time="191.391" timestamp="2020-10-09 05:09:42" hostname="DELL - DESKTOP-2NLFHT4" id="Test Suites/NacacSmokeTest">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\Visitdays-06-10-2020\\VisitDaysLatest\\Reports\\20201009_050933\\NacacSmokeTest\\20201009_050933"/>
+         <property name="logFiles" value="E:\\Visitdays-06-10-2020\\VisitDaysLatest\\Reports\\20201009_050933\\NacacSmokeTest\\20201009_050933\\execution0.log"/>
+         <property name="attachments" value="E:\Visitdays-06-10-2020\VisitDaysLatest\Reports\20201009_050933\NacacSmokeTest\20201009_050933\1602234700289.png, E:\Visitdays-06-10-2020\VisitDaysLatest\Reports\20201009_050933\NacacSmokeTest\20201009_050933/videos\test_7.mov, E:\\Visitdays-06-10-2020\\VisitDaysLatest\\Reports\\20201009_050933\\NacacSmokeTest\\20201009_050933\\1602234735641.png, E:\\Visitdays-06-10-2020\\VisitDaysLatest\\Reports\\20201009_050933\\NacacSmokeTest\\20201009_050933\\1602234768016.png"/>
+         <property name="hostName" value="DELL - DESKTOP-2NLFHT4"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.2.205"/>
+         <property name="browser" value="Chrome 85.0.4183.121"/>
+         <property name="hostAddress" value="10.0.75.1"/>
+         <property name="sessionId" value="68c51d2ba30672ce03fc98a8696b54c9"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Conventions/LoginToStudentAppInNewBrowser" time="26.465" classname="Test Cases/Conventions/LoginToStudentAppInNewBrowser" status="PASSED">
+         <system-out><![CDATA[2020-10-09 05:09:43 - [TEST_CASE][PASSED] - Test Cases/Conventions/LoginToStudentAppInNewBrowser: Test Cases/Conventions/LoginToStudentAppInNewBrowser
+
+2020-10-09 05:09:43 - [TEST_STEP][ERROR] - Start listener action : executeRows: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/LoginToStudentAppInNewBrowser, []]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/LoginToStudentAppInNewBrowser, []]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:09:44 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/LoginToStudentAppInNewBrowser, []]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/LoginToStudentAppInNewBrowser, []]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:09:44 - [TEST_STEP][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.LoginToNacacStudentAppAsStudentInNewBrowser(): com.CommonUtilities.LoginAsDifferentUserPermissions.LoginToNacacStudentAppAsStudentInNewBrowser is PASSED
+
+2020-10-09 05:09:45 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-10-09 05:09:45 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-10-09 05:09:53 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-10-09 05:09:55 - [MESSAGE][PASSED] - Current window maximized
+
+2020-10-09 05:09:58 - [MESSAGE][PASSED] - Navigate to 'https://nacac-charizard.visitdays.vercel.app/login/' successfully
+
+2020-10-09 05:10:03 - [MESSAGE][PASSED] - Keys 'gowtham.test1@qualitlabs.com' sent to object: 'Object Repository/NacacStudentApp/SignUpPage/EmailTextField'
+
+2020-10-09 05:10:05 - [MESSAGE][PASSED] - Keys 'Gowtham143.' sent to object: 'Object Repository/NacacStudentApp/SignUpPage/PasswordTextField'
+
+2020-10-09 05:10:06 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/LoginButton' is clicked on
+
+2020-10-09 05:10:07 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:10:07 - [MESSAGE][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.LoginToNacacStudentAppAsStudentInNewBrowser is PASSED
+
+2020-10-09 05:10:07 - [TEST_STEP][ERROR] - Start listener action : addFailedTCToList: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/LoginToStudentAppInNewBrowser, []]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/LoginToStudentAppInNewBrowser, []]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more
+
+
+2020-10-09 05:10:08 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/LoginToStudentAppInNewBrowser, []]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/LoginToStudentAppInNewBrowser, []]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Conventions/NACAC smoke test/VerifyHomePageElementsPresent" time="12.927" classname="Test Cases/Conventions/NACAC smoke test/VerifyHomePageElementsPresent" status="PASSED">
+         <system-out><![CDATA[2020-10-09 05:10:10 - [TEST_CASE][PASSED] - Test Cases/Conventions/NACAC smoke test/VerifyHomePageElementsPresent: Test Cases/Conventions/NACAC smoke test/VerifyHomePageElementsPresent
+
+2020-10-09 05:10:10 - [TEST_STEP][ERROR] - Start listener action : executeRows: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyHomePageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyHomePageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:10:10 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyHomePageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyHomePageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:10:11 - [TEST_STEP][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(): com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:10:15 - [MESSAGE][PASSED] - Navigate to 'https://nacac-charizard.visitdays.vercel.app/events' successfully
+
+2020-10-09 05:10:15 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:17 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/UpcomingOptionInHomePage' is present
+
+2020-10-09 05:10:17 - [MESSAGE][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:10:17 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:10:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:17 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:10:17 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/HomePageElements/EventsHomePage"), "Events top nav is not present in the home page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:17 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/EventsHomePage' is present
+
+2020-10-09 05:10:17 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:17 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/HomePageElements/VideosButtonInTopNav"), "Videos top nav is not present in the home page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:18 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/VideosButtonInTopNav' is present
+
+2020-10-09 05:10:18 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:18 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/HomePageElements/FavoritesInTopNav"), "Favorites top nav is not present in the home page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:19 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/FavoritesInTopNav' is present
+
+2020-10-09 05:10:19 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:19 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/HomePageElements/ItinearariesTopNav"), "Itineraries top nav is not present in the home page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:19 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/ItinearariesTopNav' is present
+
+2020-10-09 05:10:19 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:19 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/HomePageElements/AccountBasicsInTopNav"), "Account icon is not present in the home page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:19 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/AccountBasicsInTopNav' is present
+
+2020-10-09 05:10:19 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:19 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/Intercom"), "Intercom icon is not present in the home page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:20 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Intercom' is present
+
+2020-10-09 05:10:20 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:20 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/HomePageElements/Logo"), "Logo is not present in the home page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:20 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/Logo' is present
+
+2020-10-09 05:10:20 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:20 - [TEST_STEP][ERROR] - Start listener action : addFailedTCToList: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyHomePageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyHomePageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more
+
+
+2020-10-09 05:10:21 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyHomePageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyHomePageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Conventions/NACAC smoke test/VerifyFavoriteElementsPresent" time="10.675" classname="Test Cases/Conventions/NACAC smoke test/VerifyFavoriteElementsPresent" status="PASSED">
+         <system-out><![CDATA[2020-10-09 05:10:23 - [TEST_CASE][PASSED] - Test Cases/Conventions/NACAC smoke test/VerifyFavoriteElementsPresent: Test Cases/Conventions/NACAC smoke test/VerifyFavoriteElementsPresent
+
+2020-10-09 05:10:23 - [TEST_STEP][ERROR] - Start listener action : executeRows: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyFavoriteElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyFavoriteElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:10:23 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyFavoriteElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyFavoriteElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:10:23 - [TEST_STEP][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(): com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:10:24 - [MESSAGE][PASSED] - Navigate to 'https://nacac-charizard.visitdays.vercel.app/events' successfully
+
+2020-10-09 05:10:24 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:26 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/UpcomingOptionInHomePage' is present
+
+2020-10-09 05:10:26 - [MESSAGE][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:10:26 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:10:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:26 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:10:26 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-10-09 05:10:29 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-10-09 05:10:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/FavoritesInTopNav")): Object: 'Object Repository/NacacStudentApp/HomePageElements/FavoritesInTopNav' is clicked on
+
+2020-10-09 05:10:30 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/FavoritesInTopNav' is clicked on
+
+2020-10-09 05:10:30 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:10:30 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:30 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:10:30 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/HomePageElements/FavoriteHeaderInFavoritesPage"), "Favotires Exhibitors header is not shown in Favorites page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:30 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:31 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/FavoriteHeaderInFavoritesPage' is present
+
+2020-10-09 05:10:31 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:31 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/Intercom"), "Intercom icon is not shown in Favorites page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:31 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:31 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Intercom' is present
+
+2020-10-09 05:10:31 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:31 - [TEST_STEP][ERROR] - Start listener action : addFailedTCToList: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyFavoriteElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyFavoriteElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more
+
+
+2020-10-09 05:10:31 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyFavoriteElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyFavoriteElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Conventions/NACAC smoke test/VerifyitinerariesPageElements" time="7.713" classname="Test Cases/Conventions/NACAC smoke test/VerifyitinerariesPageElements" status="PASSED">
+         <system-out><![CDATA[2020-10-09 05:10:33 - [TEST_CASE][PASSED] - Test Cases/Conventions/NACAC smoke test/VerifyitinerariesPageElements: Test Cases/Conventions/NACAC smoke test/VerifyitinerariesPageElements
+
+2020-10-09 05:10:33 - [TEST_STEP][ERROR] - Start listener action : executeRows: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyitinerariesPageElements, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyitinerariesPageElements, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:10:33 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyitinerariesPageElements, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyitinerariesPageElements, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:10:34 - [TEST_STEP][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(): com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:10:35 - [MESSAGE][PASSED] - Navigate to 'https://nacac-charizard.visitdays.vercel.app/events' successfully
+
+2020-10-09 05:10:35 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:36 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/UpcomingOptionInHomePage' is present
+
+2020-10-09 05:10:36 - [MESSAGE][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:10:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/ItinearariesTopNav")): Object: 'Object Repository/NacacStudentApp/HomePageElements/ItinearariesTopNav' is clicked on
+
+2020-10-09 05:10:37 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/ItinearariesTopNav' is clicked on
+
+2020-10-09 05:10:37 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:10:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:10:37 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/My Schedule/MyMeetingsTab"), "My Meetings tab is not present in the My Schedule page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:38 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/My Schedule/MyMeetingsTab' is present
+
+2020-10-09 05:10:38 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:38 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/My Schedule/MyFairsOption"), "My Fairs tab is not present in the My Schedule page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:38 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/My Schedule/MyFairsOption' is present
+
+2020-10-09 05:10:38 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:38 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/Intercom"), "Intercom icon is not present in the My Schedule page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:39 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Intercom' is present
+
+2020-10-09 05:10:39 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:39 - [TEST_STEP][ERROR] - Start listener action : addFailedTCToList: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyitinerariesPageElements, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyitinerariesPageElements, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more
+
+
+2020-10-09 05:10:39 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyitinerariesPageElements, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyitinerariesPageElements, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Conventions/NACAC smoke test/VerifyVideosPageElementsPresent" time="20.251" classname="Test Cases/Conventions/NACAC smoke test/VerifyVideosPageElementsPresent" status="PASSED">
+         <system-out><![CDATA[2020-10-09 05:10:41 - [TEST_CASE][PASSED] - Test Cases/Conventions/NACAC smoke test/VerifyVideosPageElementsPresent: Test Cases/Conventions/NACAC smoke test/VerifyVideosPageElementsPresent
+
+2020-10-09 05:10:41 - [TEST_STEP][ERROR] - Start listener action : executeRows: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyVideosPageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyVideosPageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:10:41 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyVideosPageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyVideosPageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:10:41 - [TEST_STEP][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(): com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:10:43 - [MESSAGE][PASSED] - Navigate to 'https://nacac-charizard.visitdays.vercel.app/events' successfully
+
+2020-10-09 05:10:43 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:45 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/UpcomingOptionInHomePage' is present
+
+2020-10-09 05:10:45 - [MESSAGE][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:10:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/VideosButtonInTopNav")): Object: 'Object Repository/NacacStudentApp/HomePageElements/VideosButtonInTopNav' is clicked on
+
+2020-10-09 05:10:45 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/VideosButtonInTopNav' is clicked on
+
+2020-10-09 05:10:45 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:10:45 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:46 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:10:46 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/HomePageElements/ExploreVideosHeaderInVideosPage"), "Explore Videos header is not present in Videos page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:46 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:46 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/ExploreVideosHeaderInVideosPage' is present
+
+2020-10-09 05:10:46 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:46 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/Videos/FIltersIcon"), "Filters icon is not present in Videos page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:46 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:50 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Videos/FIltersIcon' is present
+
+2020-10-09 05:10:50 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:50 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/Intercom"), "Intercom icon is not present in the Videos page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:50 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:51 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Intercom' is present
+
+2020-10-09 05:10:51 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/Videos/FIltersIcon")): Object: 'Object Repository/NacacStudentApp/Videos/FIltersIcon' is clicked on
+
+2020-10-09 05:10:51 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/Videos/FIltersIcon' is clicked on
+
+2020-10-09 05:10:51 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/Filters/VideosFiltersHeader"), "When click Filters icon in Videos page, the Filters modal is not opened"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:52 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/VideosFiltersHeader' is present
+
+2020-10-09 05:10:52 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:52 - [TEST_STEP][PASSED] - com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyVideoFiltersModal(): com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyVideoFiltersModal is PASSED
+
+2020-10-09 05:10:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:52 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/AssosiatesCheckbox' is present
+
+2020-10-09 05:10:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:53 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/BachelorsCheckbox' is present
+
+2020-10-09 05:10:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:53 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/CollegeAdvertisingCheckbox' is present
+
+2020-10-09 05:10:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:53 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/CollegeAndUniversityExhibitorsCheckbox' is present
+
+2020-10-09 05:10:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:54 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/FiltersCloseButton' is present
+
+2020-10-09 05:10:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:54 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/InternationalCheckbox' is present
+
+2020-10-09 05:10:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:55 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/LargeOption' is present
+
+2020-10-09 05:10:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:55 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/MajorsDropdown' is present
+
+2020-10-09 05:10:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:55 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/MediumCheckbox' is present
+
+2020-10-09 05:10:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:56 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/PrivateCheckbox' is present
+
+2020-10-09 05:10:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:56 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/PublicCheckbox' is present
+
+2020-10-09 05:10:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:56 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/ShowButton' is present
+
+2020-10-09 05:10:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:57 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/SmallCheckbox' is present
+
+2020-10-09 05:10:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:57 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/StatesDropdown' is present
+
+2020-10-09 05:10:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:57 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/TagsDropdown' is present
+
+2020-10-09 05:10:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:58 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/UnitedStatesCheckbox' is present
+
+2020-10-09 05:10:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:58 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Filters/VideosFiltersHeader' is present
+
+2020-10-09 05:10:58 - [MESSAGE][PASSED] - com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyVideoFiltersModal is PASSED
+
+2020-10-09 05:10:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/Filters/FiltersCloseButton")): Object: 'Object Repository/NacacStudentApp/Filters/FiltersCloseButton' is clicked on
+
+2020-10-09 05:10:58 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/Filters/FiltersCloseButton' is clicked on
+
+2020-10-09 05:10:58 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementNotPresentStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/Filters/VideosFiltersHeader"), "When click Close button in Videos filters modal, the modal is not getting closed"): com.CommonUtilities.Verifications.VerifyElementNotPresentStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:10:59 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/NacacStudentApp/Filters/VideosFiltersHeader' located by 'By.xpath: //div[text()='Videos Filters']' is not present after '30' second(s)
+
+2020-10-09 05:10:59 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementNotPresentStopExecutionIfFailed is PASSED
+
+2020-10-09 05:10:59 - [TEST_STEP][ERROR] - Start listener action : addFailedTCToList: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyVideosPageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyVideosPageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more
+
+
+2020-10-09 05:10:59 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyVideosPageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyVideosPageElementsPresent, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage" time="30.526" classname="Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage" status="PASSED">
+         <system-out><![CDATA[2020-10-09 05:11:01 - [TEST_CASE][PASSED] - Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage: Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage
+
+2020-10-09 05:11:01 - [TEST_STEP][ERROR] - Start listener action : executeRows: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:11:01 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:11:02 - [TEST_STEP][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(): com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:11:05 - [MESSAGE][PASSED] - Navigate to 'https://nacac-charizard.visitdays.vercel.app/events' successfully
+
+2020-10-09 05:11:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:06 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/UpcomingOptionInHomePage' is present
+
+2020-10-09 05:11:06 - [MESSAGE][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:11:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/AccountBasicsInTopNav")): Object: 'Object Repository/NacacStudentApp/HomePageElements/AccountBasicsInTopNav' is clicked on
+
+2020-10-09 05:11:08 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/AccountBasicsInTopNav' is clicked on
+
+2020-10-09 05:11:08 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2020-10-09 05:11:08 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:11:08 - [TEST_STEP][PASSED] - com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyMyAccountPage(): com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyMyAccountPage is PASSED
+
+2020-10-09 05:11:08 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:08 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Account/CookiePolicyLink' is present
+
+2020-10-09 05:11:08 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:09 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Account/EmailHeader' is present
+
+2020-10-09 05:11:09 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:09 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Account/LegalHeader' is present
+
+2020-10-09 05:11:10 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:10 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Account/LogoutButton' is present
+
+2020-10-09 05:11:10 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:10 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Account/PrivacyPolicy' is present
+
+2020-10-09 05:11:10 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:10 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Account/TermsOfServiceLink' is present
+
+2020-10-09 05:11:10 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:11 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Account/TypeHeader' is present
+
+2020-10-09 05:11:11 - [MESSAGE][PASSED] - com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyMyAccountPage is PASSED
+
+2020-10-09 05:11:11 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/HomePageElements/PersonalInfoTabInAccountbasicspage"), "Personal Info tab is not present in the Account page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:11 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:11 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/PersonalInfoTabInAccountbasicspage' is present
+
+2020-10-09 05:11:11 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/PersonalInfoTabInAccountbasicspage")): Object: 'Object Repository/NacacStudentApp/HomePageElements/PersonalInfoTabInAccountbasicspage' is clicked on
+
+2020-10-09 05:11:12 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/PersonalInfoTabInAccountbasicspage' is clicked on
+
+2020-10-09 05:11:12 - [TEST_STEP][PASSED] - com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyPersonalInfoPage(): com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyPersonalInfoPage is PASSED
+
+2020-10-09 05:11:12 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:14 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/AddressLineOne' is present
+
+2020-10-09 05:11:14 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:14 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/AddressLineTwo' is present
+
+2020-10-09 05:11:14 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:15 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/AmericanIndianOrAlaskaNativeOption' is present
+
+2020-10-09 05:11:15 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:15 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/ApplicantTypeHeader' is present
+
+2020-10-09 05:11:15 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:15 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/AsianOption' is present
+
+2020-10-09 05:11:15 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:15 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/BlackOrAfricanAmericanOption' is present
+
+2020-10-09 05:11:15 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:16 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/cityField' is present
+
+2020-10-09 05:11:16 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:16 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/CounselorOption' is present
+
+2020-10-09 05:11:16 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:16 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/CountryDropdown' is present
+
+2020-10-09 05:11:16 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:17 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/CurrentOrLastSchoolField' is present
+
+2020-10-09 05:11:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:17 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/dobField' is present
+
+2020-10-09 05:11:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:17 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/EthinticityHeader' is present
+
+2020-10-09 05:11:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:17 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/FallOptions' is present
+
+2020-10-09 05:11:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:18 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/FamilyOption' is present
+
+2020-10-09 05:11:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:18 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/FirstNameFIeld' is present
+
+2020-10-09 05:11:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:18 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/FirstYearCollegeStudentOption' is present
+
+2020-10-09 05:11:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:19 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/FriendsOption' is present
+
+2020-10-09 05:11:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:19 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/GraduationYearField' is present
+
+2020-10-09 05:11:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:19 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/HispanicOrLatinxOption' is present
+
+2020-10-09 05:11:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:19 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/HowDidYouHearAboutVirtualFairHeader' is present
+
+2020-10-09 05:11:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:20 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/IntendedEnrollmentYearHeader' is present
+
+2020-10-09 05:11:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:20 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/InternatioalStudentOption' is present
+
+2020-10-09 05:11:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:20 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/LastNameFIeld' is present
+
+2020-10-09 05:11:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:21 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/NativeHawaiianOption' is present
+
+2020-10-09 05:11:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:21 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/OtherOptionInHowDidYouHear' is present
+
+2020-10-09 05:11:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:21 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/OthherOptionInEtinticity' is present
+
+2020-10-09 05:11:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:22 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/PhoneNumberField' is present
+
+2020-10-09 05:11:22 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:22 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/PostalCodeField' is present
+
+2020-10-09 05:11:22 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:22 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/PreferNotToAnswerInEthinticity' is present
+
+2020-10-09 05:11:22 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:22 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/PreferNotToAnswerOptionInHowDidYouHear' is present
+
+2020-10-09 05:11:23 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:23 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/SpotifyOption' is present
+
+2020-10-09 05:11:23 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:23 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/SpringOptions' is present
+
+2020-10-09 05:11:23 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:24 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/StateField' is present
+
+2020-10-09 05:11:24 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:24 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/TeacherOption' is present
+
+2020-10-09 05:11:24 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:24 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/TransferStudentOption' is present
+
+2020-10-09 05:11:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:25 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/UsVeteranStudent' is present
+
+2020-10-09 05:11:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:26 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/PersonalInfo/WhiteOption' is present
+
+2020-10-09 05:11:26 - [MESSAGE][PASSED] - com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyPersonalInfoPage is PASSED
+
+2020-10-09 05:11:26 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/HomePageElements/personaldetails page/NotificationstabInPersonalDeatailsPage"), "Notifications tab is not present in the Account page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:26 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/personaldetails page/NotificationstabInPersonalDeatailsPage' is present
+
+2020-10-09 05:11:26 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/personaldetails page/NotificationstabInPersonalDeatailsPage")): Object: 'Object Repository/NacacStudentApp/HomePageElements/personaldetails page/NotificationstabInPersonalDeatailsPage' is clicked on
+
+2020-10-09 05:11:26 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/personaldetails page/NotificationstabInPersonalDeatailsPage' is clicked on
+
+2020-10-09 05:11:26 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/Account/PreferenceHeader"), "Preferences header is not present in the Notifications tab"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:27 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:27 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Account/PreferenceHeader' is present
+
+2020-10-09 05:11:27 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:27 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/Account/EmailsCheckbox"), "Emails checkbox is not present in the Notifications tab"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:28 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:28 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Account/EmailsCheckbox' is present
+
+2020-10-09 05:11:28 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:28 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/Account/TextMessagesCheckbox"), "Text Messages checkbox is not present in the Notifications tab"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:29 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:29 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Account/TextMessagesCheckbox' is present
+
+2020-10-09 05:11:29 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:29 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/Intercom"), "Intercom icon is not present in the Notifications tab"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:29 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:30 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Intercom' is present
+
+2020-10-09 05:11:30 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:30 - [TEST_STEP][ERROR] - Start listener action : addFailedTCToList: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more
+
+
+2020-10-09 05:11:30 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/VerifyAccountBasicsPage, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication" time="10.717" classname="Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: When click My Schedule top nav the page is not opened
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at com.CommonUtilities.Verifications.VerifyTextMatch(Verifications.groovy:86)
+	at com.CommonUtilities.Verifications.invokeMethod(Verifications.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at NavigationOfTopNavElementsVerifyfication.run(NavigationOfTopNavElementsVerifyfication:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+"/>
+         <system-out><![CDATA[2020-10-09 05:11:32 - [TEST_CASE][FAILED] - Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication: Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: When click My Schedule top nav the page is not opened
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at com.CommonUtilities.Verifications.VerifyTextMatch(Verifications.groovy:86)
+	at com.CommonUtilities.Verifications.invokeMethod(Verifications.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at NavigationOfTopNavElementsVerifyfication.run(NavigationOfTopNavElementsVerifyfication:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+
+
+2020-10-09 05:11:32 - [TEST_STEP][ERROR] - Start listener action : executeRows: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:11:32 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:11:32 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:11:32 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:32 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:11:32 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/NacacStudentApp/HomePageElements/EventsHomePage"), 0): Object 'Object Repository/NacacStudentApp/HomePageElements/EventsHomePage' is clickable
+
+2020-10-09 05:11:32 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:33 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/EventsHomePage' is clickable
+
+2020-10-09 05:11:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/EventsHomePage")): Object: 'Object Repository/NacacStudentApp/HomePageElements/EventsHomePage' is clicked on
+
+2020-10-09 05:11:33 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/EventsHomePage' is clicked on
+
+2020-10-09 05:11:33 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:11:33 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:33 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:11:33 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-10-09 05:11:36 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-10-09 05:11:36 - [TEST_STEP][PASSED] - println(getUrl()): Current window's url is: 'https://nacac-charizard.visitdays.vercel.app/events'
+
+2020-10-09 05:11:36 - [MESSAGE][PASSED] - Current window's url is: 'https://nacac-charizard.visitdays.vercel.app/events'
+
+2020-10-09 05:11:36 - [TEST_STEP][PASSED] - println(studenturl + "events"): null
+
+2020-10-09 05:11:36 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyTextMatch(getUrl(), studenturl + "events", "When click Events top nav the Events page not opened"): com.CommonUtilities.Verifications.VerifyTextMatch is PASSED
+
+2020-10-09 05:11:36 - [MESSAGE][PASSED] - Current window's url is: 'https://nacac-charizard.visitdays.vercel.app/events'
+
+2020-10-09 05:11:36 - [MESSAGE][PASSED] - Actual text 'https://nacac-charizard.visitdays.vercel.app/events' and expected text 'https://nacac-charizard.visitdays.vercel.app/events' are matched 
+
+2020-10-09 05:11:36 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyTextMatch is PASSED
+
+2020-10-09 05:11:36 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/Events/WithSupportFromHeader"), "Sponsers header is not shown in events page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:36 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:37 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Events/WithSupportFromHeader' is present
+
+2020-10-09 05:11:37 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/VideosButtonInTopNav")): Object: 'Object Repository/NacacStudentApp/HomePageElements/VideosButtonInTopNav' is clicked on
+
+2020-10-09 05:11:37 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/VideosButtonInTopNav' is clicked on
+
+2020-10-09 05:11:37 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:11:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:11:37 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyTextMatch(getUrl(), studenturl + "videos", "When click Videos top nav the Events page not opened"): com.CommonUtilities.Verifications.VerifyTextMatch is PASSED
+
+2020-10-09 05:11:37 - [MESSAGE][PASSED] - Current window's url is: 'https://nacac-charizard.visitdays.vercel.app/videos'
+
+2020-10-09 05:11:37 - [MESSAGE][PASSED] - Actual text 'https://nacac-charizard.visitdays.vercel.app/videos' and expected text 'https://nacac-charizard.visitdays.vercel.app/videos' are matched 
+
+2020-10-09 05:11:37 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyTextMatch is PASSED
+
+2020-10-09 05:11:37 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/Videos/ExploreVideosHeader"), "Explore Videos header is not shown in Videos page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:38 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Videos/ExploreVideosHeader' is present
+
+2020-10-09 05:11:38 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/FavoritesInTopNav")): Object: 'Object Repository/NacacStudentApp/HomePageElements/FavoritesInTopNav' is clicked on
+
+2020-10-09 05:11:38 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/FavoritesInTopNav' is clicked on
+
+2020-10-09 05:11:38 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:11:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:38 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:11:38 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyTextMatch(getUrl(), studenturl + "favorites", "When click Favorites top nav the favorites page not opened"): com.CommonUtilities.Verifications.VerifyTextMatch is PASSED
+
+2020-10-09 05:11:38 - [MESSAGE][PASSED] - Current window's url is: 'https://nacac-charizard.visitdays.vercel.app/favorites'
+
+2020-10-09 05:11:38 - [MESSAGE][PASSED] - Actual text 'https://nacac-charizard.visitdays.vercel.app/favorites' and expected text 'https://nacac-charizard.visitdays.vercel.app/favorites' are matched 
+
+2020-10-09 05:11:38 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyTextMatch is PASSED
+
+2020-10-09 05:11:38 - [TEST_STEP][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed(findTestObject("Object Repository/NacacStudentApp/HomePageElements/FavoriteHeaderInFavoritesPage"), "Favorites header is not shown in Favorites page"): com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:39 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/FavoriteHeaderInFavoritesPage' is present
+
+2020-10-09 05:11:39 - [MESSAGE][PASSED] - com.CommonUtilities.Verifications.VerifyElementPresentAndStopExecutionIfFailed is PASSED
+
+2020-10-09 05:11:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/ItinearariesTopNav")): Object: 'Object Repository/NacacStudentApp/HomePageElements/ItinearariesTopNav' is clicked on
+
+2020-10-09 05:11:39 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/ItinearariesTopNav' is clicked on
+
+2020-10-09 05:11:39 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:11:39 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:39 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:11:39 - [TEST_STEP][FAILED] - com.CommonUtilities.Verifications.VerifyTextMatch(getUrl(), studenturl + "itineraries?activeTab=0", "When click My Schedule top nav the page is not opened"): When click My Schedule top nav the page is not opened
+
+2020-10-09 05:11:39 - [MESSAGE][PASSED] - Current window's url is: 'https://nacac-charizard.visitdays.vercel.app/favorites'
+
+2020-10-09 05:11:39 - [MESSAGE][WARNING] - Unable to verify match between actual text 'https://nacac-charizard.visitdays.vercel.app/favorites' and expected text 'https://nacac-charizard.visitdays.vercel.app/itineraries?activeTab=0' (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text 'https://nacac-charizard.visitdays.vercel.app/favorites' and expected text 'https://nacac-charizard.visitdays.vercel.app/itineraries?activeTab=0' are not matched
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.doCall(VerifyMatchKeyword.groovy:57)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.call(VerifyMatchKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.verifyMatch(VerifyMatchKeyword.groovy:60)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.execute(VerifyMatchKeyword.groovy:45)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyMatch(BuiltinKeywords.groovy:55)
+	at com.CommonUtilities.Verifications.VerifyTextMatch(Verifications.groovy:84)
+	at com.CommonUtilities.Verifications.invokeMethod(Verifications.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at NavigationOfTopNavElementsVerifyfication.run(NavigationOfTopNavElementsVerifyfication:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+)
+
+2020-10-09 05:11:40 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|E:\Visitdays-06-10-2020\VisitDaysLatest\Reports\20201009_050933\NacacSmokeTest\20201009_050933\1602234700289.png]]
+
+2020-10-09 05:11:40 - [MESSAGE][FAILED] - When click My Schedule top nav the page is not opened
+
+2020-10-09 05:11:40 - [TEST_STEP][ERROR] - Start listener action : addFailedTCToList: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:108)
+	... 14 more
+
+
+2020-10-09 05:11:40 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:108)
+	... 14 more
+
+
+2020-10-09 05:11:42 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication' .
+
+2020-10-09 05:11:42 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication' .
+[[ATTACHMENT|E:\Visitdays-06-10-2020\VisitDaysLatest\Reports\20201009_050933\NacacSmokeTest\20201009_050933/videos\test_7.mov]]]]></system-out>
+         <system-err><![CDATA[2020-10-09 05:11:32 - [TEST_CASE][FAILED] - Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication: Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: When click My Schedule top nav the page is not opened
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at com.CommonUtilities.Verifications.VerifyTextMatch(Verifications.groovy:86)
+	at com.CommonUtilities.Verifications.invokeMethod(Verifications.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at NavigationOfTopNavElementsVerifyfication.run(NavigationOfTopNavElementsVerifyfication:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Conventions/NACAC smoke test/CollegesPageVerification" time="35.826" classname="Test Cases/Conventions/NACAC smoke test/CollegesPageVerification" status="PASSED">
+         <system-out><![CDATA[2020-10-09 05:11:42 - [TEST_CASE][PASSED] - Test Cases/Conventions/NACAC smoke test/CollegesPageVerification: Test Cases/Conventions/NACAC smoke test/CollegesPageVerification
+
+2020-10-09 05:11:42 - [TEST_STEP][ERROR] - Start listener action : executeRows: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/CollegesPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/CollegesPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:11:43 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/CollegesPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/CollegesPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:11:43 - [TEST_STEP][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(): com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:11:44 - [MESSAGE][PASSED] - Navigate to 'https://nacac-charizard.visitdays.vercel.app/events' successfully
+
+2020-10-09 05:11:44 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:46 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/UpcomingOptionInHomePage' is present
+
+2020-10-09 05:11:46 - [MESSAGE][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:11:46 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:11:46 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:46 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:11:46 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-10-09 05:11:48 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-10-09 05:11:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/EventsHomePage")): Object: 'Object Repository/NacacStudentApp/HomePageElements/EventsHomePage' is clicked on
+
+2020-10-09 05:11:48 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/EventsHomePage' is clicked on
+
+2020-10-09 05:11:48 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:11:48 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:48 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:11:48 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Object Repository/NacacStudentApp/HomePageElements/FirstConventionName"), 0, OPTIONAL)): null
+
+2020-10-09 05:11:48 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:49 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/FirstConventionName' is present
+
+2020-10-09 05:11:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/FirstConventionName")): Object: 'Object Repository/NacacStudentApp/HomePageElements/FirstConventionName' is clicked on
+
+2020-10-09 05:11:49 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/FirstConventionName' is clicked on
+
+2020-10-09 05:11:49 - [TEST_STEP][PASSED] - com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyCollegesPage(): com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyCollegesPage is PASSED
+
+2020-10-09 05:11:49 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:51 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/AssosiatesCheckbox' is present
+
+2020-10-09 05:11:51 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:51 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/BachelorsCheckbox' is present
+
+2020-10-09 05:11:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:52 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/CollegeAdvertisingCenterCheckbox' is present
+
+2020-10-09 05:11:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:53 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/CollegeAndUniversityExhibitors' is present
+
+2020-10-09 05:11:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:53 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/CollegesCount' is present
+
+2020-10-09 05:11:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:54 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/CollegesTab' is present
+
+2020-10-09 05:11:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:54 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/FilterHeader' is present
+
+2020-10-09 05:11:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:54 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/LargeCheckbox' is present
+
+2020-10-09 05:11:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:54 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/LiveSessionsTab' is present
+
+2020-10-09 05:11:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:55 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/MajorsDropdown' is present
+
+2020-10-09 05:11:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:55 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/MediumCheckbox' is present
+
+2020-10-09 05:11:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:55 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/PrivateCheckbox' is present
+
+2020-10-09 05:11:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:56 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/PublicCheckbox' is present
+
+2020-10-09 05:11:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:56 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/RegisterButton' is present
+
+2020-10-09 05:11:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:56 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/SearchField' is present
+
+2020-10-09 05:11:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:57 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/SearchhByStateDropdown' is present
+
+2020-10-09 05:11:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:57 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/ShowInternationalLoocationsDropdown' is present
+
+2020-10-09 05:11:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:57 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/SmallCheckbox' is present
+
+2020-10-09 05:11:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:57 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/SortButton' is present
+
+2020-10-09 05:11:58 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/Colleges/SortButton' is clicked on
+
+2020-10-09 05:11:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:58 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/A-ZOption' is present
+
+2020-10-09 05:11:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:11:59 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/Z-AOption' is present
+
+2020-10-09 05:12:15 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: ((//div[@class="MuiPaper-root MuiCard-root jss295 MuiPaper-elevation3 MuiPaper-rounded"])[1]//div[@class="css-901oao"])[2]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2020-10-09 05:12:16 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/NacacStudentApp/Colleges/FirstCollege' located by '((//div[@class="MuiPaper-root MuiCard-root jss295 MuiPaper-elevation3 MuiPaper-rounded"])[1]//div[@class="css-901oao"])[2]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/NacacStudentApp/Colleges/FirstCollege' located by '((//div[@class="MuiPaper-root MuiCard-root jss295 MuiPaper-elevation3 MuiPaper-rounded"])[1]//div[@class="css-901oao"])[2]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$6.call(Unknown Source)
+	at com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyCollegesPage(SmokeTests.groovy:177)
+	at com.CommonUtilitiesofNACACstudentApp.SmokeTests.invokeMethod(SmokeTests.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at CollegesPageVerification.run(CollegesPageVerification:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+)
+[[ATTACHMENT|E:\\Visitdays-06-10-2020\\VisitDaysLatest\\Reports\\20201009_050933\\NacacSmokeTest\\20201009_050933\\1602234735641.png]]
+
+2020-10-09 05:12:16 - [MESSAGE][PASSED] - com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyCollegesPage is PASSED
+
+2020-10-09 05:12:16 - [TEST_STEP][ERROR] - Start listener action : addFailedTCToList: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/CollegesPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/CollegesPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more
+
+
+2020-10-09 05:12:16 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/CollegesPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/CollegesPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification" time="32.209" classname="Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification" status="PASSED">
+         <system-out><![CDATA[2020-10-09 05:12:18 - [TEST_CASE][PASSED] - Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification: Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification
+
+2020-10-09 05:12:18 - [TEST_STEP][ERROR] - Start listener action : executeRows: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:12:18 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.executeRows(TestListener.groovy:85)
+	... 14 more
+
+
+2020-10-09 05:12:18 - [TEST_STEP][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage(): com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:12:20 - [MESSAGE][PASSED] - Navigate to 'https://nacac-charizard.visitdays.vercel.app/events' successfully
+
+2020-10-09 05:12:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:22 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/UpcomingOptionInHomePage' is present
+
+2020-10-09 05:12:22 - [MESSAGE][PASSED] - com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage is PASSED
+
+2020-10-09 05:12:22 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:12:22 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:22 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:12:22 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-10-09 05:12:24 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-10-09 05:12:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/EventsHomePage")): Object: 'Object Repository/NacacStudentApp/HomePageElements/EventsHomePage' is clicked on
+
+2020-10-09 05:12:24 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/EventsHomePage' is clicked on
+
+2020-10-09 05:12:24 - [TEST_STEP][PASSED] - waitForPageLoad(0): Wait for page load successfully
+
+2020-10-09 05:12:24 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:24 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-10-09 05:12:24 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Object Repository/NacacStudentApp/HomePageElements/FirstConventionName"), 0, OPTIONAL)): null
+
+2020-10-09 05:12:24 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:25 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/HomePageElements/FirstConventionName' is present
+
+2020-10-09 05:12:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/HomePageElements/FirstConventionName")): Object: 'Object Repository/NacacStudentApp/HomePageElements/FirstConventionName' is clicked on
+
+2020-10-09 05:12:25 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/HomePageElements/FirstConventionName' is clicked on
+
+2020-10-09 05:12:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/NacacStudentApp/Colleges/LiveSessionsTab")): Object: 'Object Repository/NacacStudentApp/Colleges/LiveSessionsTab' is clicked on
+
+2020-10-09 05:12:26 - [MESSAGE][PASSED] - Object: 'Object Repository/NacacStudentApp/Colleges/LiveSessionsTab' is clicked on
+
+2020-10-09 05:12:26 - [TEST_STEP][PASSED] - com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyLiveSessionsPage(): com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyLiveSessionsPage is PASSED
+
+2020-10-09 05:12:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:31 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/AllTimesButton' is present
+
+2020-10-09 05:12:31 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:32 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/SearchField' is present
+
+2020-10-09 05:12:32 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:33 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/TagsDropdown' is present
+
+2020-10-09 05:12:33 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:33 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/LocationsDropdown' is present
+
+2020-10-09 05:12:33 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:33 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/ShowInternationalLoocationsDropdown' is present
+
+2020-10-09 05:12:34 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:34 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/MajorsDropdown' is present
+
+2020-10-09 05:12:34 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:34 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/PrivateCheckbox' is present
+
+2020-10-09 05:12:34 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:34 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/PublicCheckbox' is present
+
+2020-10-09 05:12:34 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:35 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/AssosiatesCheckbox' is present
+
+2020-10-09 05:12:35 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:35 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/BachelorsCheckbox' is present
+
+2020-10-09 05:12:35 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:35 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/SmallCheckbox' is present
+
+2020-10-09 05:12:35 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:36 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/MediumCheckbox' is present
+
+2020-10-09 05:12:36 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:36 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/LargeCheckbox' is present
+
+2020-10-09 05:12:36 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:36 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/CollegeAdvertisingCenterCheckbox' is present
+
+2020-10-09 05:12:36 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-10-09 05:12:36 - [MESSAGE][PASSED] - Object 'Object Repository/NacacStudentApp/Colleges/CollegeAndUniversityExhibitors' is present
+
+2020-10-09 05:12:48 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //button[contains(@class,"MuiButtonBase-root MuiButton-root jss399 MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge")]//ancestor::div[contains(@class,"MuiCardContent-root ")]//div[not(@style)]//div[@dir="auto" and contains(@style,'font-size: 18px')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2020-10-09 05:12:48 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/NacacStudentApp/Colleges/Livesessions' located by '//button[contains(@class,"MuiButtonBase-root MuiButton-root jss399 MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge")]//ancestor::div[contains(@class,"MuiCardContent-root ")]//div[not(@style)]//div[@dir="auto" and contains(@style,'font-size: 18px')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/NacacStudentApp/Colleges/Livesessions' located by '//button[contains(@class,"MuiButtonBase-root MuiButton-root jss399 MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge")]//ancestor::div[contains(@class,"MuiCardContent-root ")]//div[not(@style)]//div[@dir="auto" and contains(@style,'font-size: 18px')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$6.call(Unknown Source)
+	at com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyLiveSessionsPage(SmokeTests.groovy:222)
+	at com.CommonUtilitiesofNACACstudentApp.SmokeTests.invokeMethod(SmokeTests.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at LiveSessionsPageVerification.run(LiveSessionsPageVerification:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+)
+[[ATTACHMENT|E:\\Visitdays-06-10-2020\\VisitDaysLatest\\Reports\\20201009_050933\\NacacSmokeTest\\20201009_050933\\1602234768016.png]]
+
+2020-10-09 05:12:48 - [MESSAGE][PASSED] - com.CommonUtilitiesofNACACstudentApp.SmokeTests.verifyLiveSessionsPage is PASSED
+
+2020-10-09 05:12:48 - [TEST_STEP][ERROR] - Start listener action : addFailedTCToList: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more
+
+
+2020-10-09 05:12:48 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.invokeMethod(TestListener.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static CustomKeywords.com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [Test Cases/Conventions/NACAC smoke test/LiveSessionsPageVerification, ...]
+Possible solutions: com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList(com.sun.org.apache.xpath.internal.operations.String, java.util.ArrayList)
+	at TestListener.addFailedTCToList(TestListener.groovy:115)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-10-09 05:09:42 - [TEST_SUITE][FAILED] - NacacSmokeTest: Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: When click My Schedule top nav the page is not opened
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at com.CommonUtilities.Verifications.VerifyTextMatch(Verifications.groovy:86)
+	at com.CommonUtilities.Verifications.invokeMethod(Verifications.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at NavigationOfTopNavElementsVerifyfication.run(NavigationOfTopNavElementsVerifyfication:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)]]></system-out>
+      <system-err><![CDATA[2020-10-09 05:09:42 - [TEST_SUITE][FAILED] - NacacSmokeTest: Test Cases/Conventions/NACAC smoke test/NavigationOfTopNavElementsVerifyfication FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: When click My Schedule top nav the page is not opened
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at com.CommonUtilities.Verifications.VerifyTextMatch(Verifications.groovy:86)
+	at com.CommonUtilities.Verifications.invokeMethod(Verifications.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at NavigationOfTopNavElementsVerifyfication.run(NavigationOfTopNavElementsVerifyfication:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1602234573703.run(TempTestSuite1602234573703.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>

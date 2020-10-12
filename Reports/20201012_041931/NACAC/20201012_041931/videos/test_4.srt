@@ -1,0 +1,56 @@
+1
+00:00:00,334 --> 00:00:00,335
+1. com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToHomePage()
+
+2
+00:00:06,149 --> 00:00:06,151
+5. conventionName = com.CommonUtilities.CreateMeeting.getConvention()
+
+3
+00:00:19,495 --> 00:00:19,496
+9. videoName = com.CommonUtilities.VideoLibrary.addVideoToVideoLibrary()
+
+4
+00:00:34,653 --> 00:00:34,655
+13. institutionName = com.CommonUtilities.GetInstitutionName.getInstitutionNameFromAdminApp()
+
+5
+00:00:38,726 --> 00:00:38,727
+17. com.CommonUtilities.LoginAsDifferentUserPermissions.NavigateToNacacHomePage()
+
+6
+00:00:42,407 --> 00:00:42,408
+21. click(findTestObject("NacacStudentApp/HomePageElements/SelectConventionInHomePage", ["Name":conventionName]))
+
+7
+00:00:43,185 --> 00:00:43,186
+25. delay(5)
+
+8
+00:00:48,202 --> 00:00:48,203
+29. element = findWebElement(findTestObject("NacacStudentApp/HomePageElements/CollegesTabInExhibitorsPage"), 0)
+
+9
+00:00:48,550 --> 00:00:48,551
+33. executeJavaScript("arguments[0].click()", Arrays.asList(element))
+
+10
+00:00:48,661 --> 00:00:48,662
+37. if (verifyElementPresent(findTestObject("Object Repository/NacacStudentApp/HomePageElements/LoadMoreButton"), 5, OPTIONAL))
+
+11
+00:00:55,555 --> 00:00:55,556
+41. waitForElementPresent(findTestObject("NacacStudentApp/HomePageElements/CollegeName", ["Exhibitor":institutionName]), 0)
+
+12
+00:00:55,925 --> 00:00:55,926
+45. click(findTestObject("NacacStudentApp/HomePageElements/CollegeName", ["Exhibitor":institutionName]))
+
+13
+00:00:56,340 --> 00:00:56,342
+49. click(findTestObject("Object Repository/ConventionsPageAdmin/VideosTabInExhibitorsPage"))
+
+14
+00:00:57,314 --> 00:00:57,316
+53. scrollToElement(findTestObject("Object Repository/NacacStudentApp/HomePageElements/VideosInExhibitorspage", ["Video":videoName]), 0)
+

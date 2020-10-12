@@ -40,6 +40,8 @@ String emailOfStudent=WebUI.getText(findTestObject('Object Repository/NacacStude
 
 println(emailOfStudent)
 
+WebUI.click(findTestObject('Object Repository/NacacStudentApp/HomePageElements/EventsHomePage'))
+
 WebUI.click(findTestObject('NacacStudentApp/HomePageElements/SelectConventionInHomePage',['Name':conventionName]))
 
 WebUI.delay(5)

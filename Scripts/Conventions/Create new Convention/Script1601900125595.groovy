@@ -51,13 +51,25 @@ if(WebUI.verifyElementPresent(findTestObject('Object Repository/ConventionsPageA
 	
 	WebUI.click(findTestObject('Object Repository/Self serve objects/EditConventionButtonInConventionspage',['ConventionName':ConventionName]))
 	
-	WebUI.sendKeys(findTestObject('Object Repository/Self serve objects/MaxSessionsInput'),'100')
+	WebUI.click(findTestObject('Object Repository/Self serve objects/ClickEndYear'))
+	
+	String yearstring=WebUI.getText(findTestObject('Object Repository/Self serve objects/GetYearFromEndYearDropdown'))
+	
+	int year=Integer.parseInt(yearstring)
+	
+	def nextYear=year+1
+	
+	WebUI.click(findTestObject('Object Repository/Self serve objects/SelectEndyear',['EndYear':nextYear]))
+	
+	WebUI.sendKeys(findTestObject('Object Repository/Self serve objects/MaxSessionsInput'),'1000')
 	
 	WebUI.sendKeys(findTestObject('Object Repository/Self serve objects/SessionDurationMinutes'), Keys.chord(Keys.CONTROL, 'a'))
 	
 	WebUI.sendKeys(findTestObject('Object Repository/Self serve objects/SessionDurationMinutes'), Keys.chord(Keys.BACK_SPACE))
 	
 	WebUI.click(findTestObject('Object Repository/Self serve objects/UpdateConvention'))
+	
+	WebUI.delay(5)
 	
 }
 else

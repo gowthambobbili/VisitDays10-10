@@ -41,30 +41,30 @@ public class CreateMeeting {
 
 	String meetdate=(ft.format(dNow)).toString()
 
-//	def meetdate=meetdates.substring(0,2)
+	//	def meetdate=meetdates.substring(0,2)
 
 	def zoomId="https://zoom.us/j/12345678"
 
 	@Keyword
 	def getConvention() {
 
-				WebUI.click(findTestObject('Object Repository/HomePageElements/PersonIcon'))
-		
-				WebUI.click(findTestObject('Object Repository/HomePageElements/NacacConventionslink'))
-		
-				WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/Conventionsleftnav'))
-				
-				WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/LiveSessionleftNavInSubMenu'))
-		
-				WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/CreateButtonInLiveSessions'))
-		
-				WebUI.waitForPageLoad(5)
-		
-    		   def ConventionName=WebUI.getText(findTestObject('Object Repository/ConventionsPageAdmin/getNameOfFirstConvention'))
+		WebUI.click(findTestObject('Object Repository/HomePageElements/PersonIcon'))
 
-			   return ConventionName
+		WebUI.click(findTestObject('Object Repository/HomePageElements/NacacConventionslink'))
 
-//		return GlobalVariable.createdConventionName
+		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/Conventionsleftnav'))
+
+		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/LiveSessionleftNavInSubMenu'))
+
+		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/CreateButtonInLiveSessions'))
+
+		WebUI.waitForPageLoad(5)
+
+		def ConventionName=WebUI.getText(findTestObject('Object Repository/ConventionsPageAdmin/getNameOfFirstConvention'))
+
+		return ConventionName
+
+		//		return GlobalVariable.createdConventionName
 	}
 
 	@Keyword
@@ -128,7 +128,7 @@ public class CreateMeeting {
 
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/StartTimeInMeetings'))
 
-		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/StartTimeInMeetings'),'07')
+		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/StartTimeInMeetings'),'11')
 
 		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/StartTimeInMeetings'),'15')
 
@@ -136,7 +136,7 @@ public class CreateMeeting {
 
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/EndTimeInMeetings'))
 
-		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/EndTimeInMeetings'),'08')
+		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/EndTimeInMeetings'),'11')
 
 		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/EndTimeInMeetings'),'45')
 

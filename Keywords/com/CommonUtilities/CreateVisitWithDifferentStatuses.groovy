@@ -124,9 +124,115 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+
+		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/PublishButtonInDailyVisit'))
+
+		WebUI.waitForElementVisible(findTestObject('DailyVisitsPage/PublishButtonInConfirmationModal'), 0)
+
+		WebUI.click(findTestObject('DailyVisitsPage/PublishButtonInConfirmationModal'))
+
+		WebUI.waitForElementPresent(findTestObject('DailyVisitsPage/DateRangeFilterInDailyVisitsPage'), 0)
+
+		WebUI.delay(4)
+
+		WebUI.refresh()
+
+		WebUI.waitForElementPresent(findTestObject('DailyVisitsPage/DateRangeFilterInDailyVisitsPage'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+	}
+	@Keyword
+	def CreateDailyVisitWithInprogressTimesAndHideAdmins(String VisitType) {
+
+		Date dNow = new Date( );
+		SimpleDateFormat ft =
+				new SimpleDateFormat ("hh:mm a");
+		System.out.println("Current Date: " + ft.format(dNow));
+		String CurrentTime = (ft.format(dNow)).toString()
+
+		String Meridiem = CurrentTime.split(' ')[1]
+
+		String HoursString = CurrentTime.split(' ')[0]
+
+		//		int Hours = Integer.parseInt(HoursString)
+		//
+		//
+		//
+		//		String StartTime = Hours - 1
+		//
+		//		StartTime = ((StartTime.toString() + ':00') + Meridiem)
+		//
+		//		String EndTime = Hours + 1
+		//
+		//		EndTime = ((EndTime.toString() + ':00') + Meridiem)
+
+		WebUI.waitForElementPresent(findTestObject('DailyVisitsPage/VisitTypeFieldInDailyVisit'), 0)
+
+		WebUI.click(findTestObject('DailyVisitsPage/VisitTypeFieldInDailyVisit'))
+
+		def object = new TestObject('VisitTypeInFilterWhileCreatingDailyVisit')
+
+		object.addProperty('xpath', ConditionType.EQUALS, ('//li[text()=\'' + VisitType) + '\']')
+
+		WebUI.click(object)
+
+		WebUI.scrollToElement(findTestObject('DailyVisitsPage/DateRangeLabel'), 0)
+
+		WebUI.click(findTestObject('DailyVisitsPage/StartDateFiledInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/StartDateInVisitTypeCalanderWhileCreatingVT'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/EndDateFieldInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/endDateInCalanderWhileCreatingDV'))
+
+		//==================
+		WebUI.clearText(findTestObject('DailyVisitsPage/StatTimeFieldInDailyVisit'))
+
+		WebUI.sendKeys(findTestObject('DailyVisitsPage/StatTimeFieldInDailyVisit'), CurrentTime)
+
+		WebUI.click(findTestObject('DailyVisitsPage/EndTimeFieldInDailyVisit'))
+
+		WebUI.clearText(findTestObject('DailyVisitsPage/EndTimeFieldInDailyVisit'))
+
+		WebUI.sendKeys(findTestObject('DailyVisitsPage/EndTimeFieldInDailyVisit'), CurrentTime)
+
+		WebUI.click(findTestObject('DailyVisitsPage/IncreaseMinutesArrow'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/IncreaseMinutesArrow'))
+
+
+		//==================
+		WebUI.scrollToElement(findTestObject('DailyVisitsPage/LocationFieldInDailyVisit'), 0)
+
+		WebUI.click(findTestObject('DailyVisitsPage/LocationFieldInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/FirstLocationInCreateDailyVisiyPage'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/YesSetCapacityOptionInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/NoCapacityButtonInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
+
+		WebUI.click(findTestObject('Object Repository/DailyVisitsPage/HideAdminsButton'))
+
+		//		WebUI.scrollToElement(findTestObject('Object Repository/DailyVisitsPage/AssignNowInDailyVisit'), 0)
+
+		//		WebUI.click(findTestObject('Object Repository/DailyVisitsPage/AssignNowInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+
+		WebUI.scrollToElement(findTestObject('DailyVisitsPage/RequestOwnerSearchBoxInDailyVisit'), 0)
+
+		WebUI.sendKeys(findTestObject('DailyVisitsPage/RequestOwnerSearchBoxInDailyVisit'), 'test user')
+
+		WebUI.click(findTestObject('DailyVisitsPage/AdminUserInAssignRequestOwnerList'))
+
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -194,9 +300,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('Object Repository/CreateSessionsType/NextButton'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -281,9 +387,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('Object Repository/CreateSessionsType/NextButton'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -388,9 +494,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -483,9 +589,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -504,6 +610,107 @@ class CreateVisitWithDifferentStatuses {
 		WebUI.waitForElementPresent(findTestObject('DailyVisitsPage/DateRangeFilterInDailyVisitsPage'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 	}
+	@Keyword
+	def CreateEventWithInprogressTimesAndHideAdmins(String VisitType) {
+
+		Date dNow = new Date( );
+		SimpleDateFormat ft =
+				new SimpleDateFormat ("hh:mm a");
+		System.out.println("Current Date: " + ft.format(dNow));
+
+		String CurrentTime = (ft.format(dNow)).toString()
+
+		//		String Meridiem = CurrentTime.split(' ')[1]
+		//
+		//		String HoursString = CurrentTime.split(' ')[0]
+
+		//		int Hours = Integer.parseInt(HoursString)
+		//
+		//		String StartTime = Hours - 1
+		//
+		//		StartTime = ((StartTime.toString() + ':00') + Meridiem)
+		//
+		//		String EndTime = Hours + 1
+		//
+		//		EndTime = ((EndTime.toString() + ':00') + Meridiem)
+
+		WebUI.waitForElementPresent(findTestObject('DailyVisitsPage/VisitTypeFieldInDailyVisit'), 0)
+
+		WebUI.click(findTestObject('DailyVisitsPage/VisitTypeFieldInDailyVisit'))
+
+		def object = new TestObject('VisitTypeInFilterWhileCreatingDailyVisit')
+
+		object.addProperty('xpath', ConditionType.EQUALS, ('//li[text()=\'' + VisitType) + '\']')
+
+		WebUI.click(object)
+
+		//driver.findElement(By.xpath(('//li[text()=\'' + VisitType) + '\']')).click()
+
+
+		WebUI.scrollToElement(findTestObject('DailyVisitsPage/LocationFieldInDailyVisit'), 0)
+
+		WebUI.click(findTestObject('EventsPage/DateFieldInCreateEventPage'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/StartDateInVisitTypeCalanderWhileCreatingVT'))
+
+		//==================
+		WebUI.clearText(findTestObject('DailyVisitsPage/StatTimeFieldInDailyVisit'))
+
+		WebUI.sendKeys(findTestObject('DailyVisitsPage/StatTimeFieldInDailyVisit'), CurrentTime)
+
+		WebUI.click(findTestObject('DailyVisitsPage/EndTimeFieldInDailyVisit'))
+
+		WebUI.clearText(findTestObject('DailyVisitsPage/EndTimeFieldInDailyVisit'))
+
+		WebUI.sendKeys(findTestObject('DailyVisitsPage/EndTimeFieldInDailyVisit'), CurrentTime)
+
+		WebUI.click(findTestObject('DailyVisitsPage/IncreaseMinutesArrow'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/IncreaseMinutesArrow'))
+
+		//==================
+		WebUI.scrollToElement(findTestObject('DailyVisitsPage/LocationFieldInDailyVisit'), 0)
+
+		WebUI.click(findTestObject('DailyVisitsPage/LocationFieldInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/FirstLocationInCreateDailyVisiyPage'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/NoCapacityButtonInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
+
+		WebUI.click(findTestObject('Object Repository/DailyVisitsPage/HideAdminsButton'))
+
+		//		WebUI.scrollToElement(findTestObject('Object Repository/DailyVisitsPage/AssignNowInDailyVisit'), 0)
+
+		WebUI.click(findTestObject('Object Repository/DailyVisitsPage/AssignNowInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+
+		WebUI.scrollToElement(findTestObject('DailyVisitsPage/RequestOwnerSearchBoxInDailyVisit'), 0)
+
+		WebUI.sendKeys(findTestObject('DailyVisitsPage/RequestOwnerSearchBoxInDailyVisit'), 'test user')
+
+		WebUI.click(findTestObject('DailyVisitsPage/AdminUserInAssignRequestOwnerList'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/PublishButtonInDailyVisit'))
+
+		WebUI.waitForElementVisible(findTestObject('DailyVisitsPage/PublishButtonInConfirmationModal'), 0)
+
+		WebUI.click(findTestObject('DailyVisitsPage/PublishButtonInConfirmationModal'))
+
+		WebUI.waitForElementPresent(findTestObject('DailyVisitsPage/DateRangeFilterInDailyVisitsPage'), 0)
+
+		WebUI.delay(4)
+
+		WebUI.refresh()
+
+		WebUI.waitForElementPresent(findTestObject('DailyVisitsPage/DateRangeFilterInDailyVisitsPage'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+	}
+
 
 	@Keyword
 	def CreateOffCampusWithInprogressTimes(String VisitType) {
@@ -557,9 +764,89 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+
+		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/PublishButtonInDailyVisit'))
+
+		WebUI.waitForElementVisible(findTestObject('DailyVisitsPage/PublishButtonInConfirmationModal'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+		WebUI.click(findTestObject('DailyVisitsPage/PublishButtonInConfirmationModal'))
+
+		WebUI.waitForElementPresent(findTestObject('DailyVisitsPage/DateRangeFilterInDailyVisitsPage'), 0)
+
+		WebUI.delay(5)
+
+		WebUI.refresh()
+
+		WebUI.waitForElementPresent(findTestObject('DailyVisitsPage/DateRangeFilterInDailyVisitsPage'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+	}
+	@Keyword
+	def CreateOffCampusWithInprogressTimesAndHideAdmins(String VisitType) {
+
+		Date dNow = new Date( );
+		SimpleDateFormat ft =
+				new SimpleDateFormat ("hh:mm a");
+		System.out.println("Current Date: " + ft.format(dNow));
+
+		String CurrentTime = (ft.format(dNow)).toString()
+
+		WebUI.waitForElementPresent(findTestObject('DailyVisitsPage/VisitTypeFieldInDailyVisit'), 0)
+
+		WebUI.click(findTestObject('DailyVisitsPage/VisitTypeFieldInDailyVisit'))
+
+		def object = new TestObject('VisitTypeInFilterWhileCreatingDailyVisit')
+
+		object.addProperty('xpath', ConditionType.EQUALS, ('//li[text()=\'' + VisitType) + '\']')
+
+		WebUI.click(object)
+
+		WebUI.scrollToElement(findTestObject('EventsPage/DateFieldInCreateEventPage'), 0)
+
+		WebUI.click(findTestObject('EventsPage/DateFieldInCreateEventPage'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/StartDateInVisitTypeCalanderWhileCreatingVT'))
+
+		WebUI.clearText(findTestObject('DailyVisitsPage/StatTimeFieldInDailyVisit'))
+
+		WebUI.sendKeys(findTestObject('DailyVisitsPage/StatTimeFieldInDailyVisit'), CurrentTime)
+
+		WebUI.click(findTestObject('DailyVisitsPage/EndTimeFieldInDailyVisit'))
+
+		WebUI.clearText(findTestObject('DailyVisitsPage/EndTimeFieldInDailyVisit'))
+
+		WebUI.sendKeys(findTestObject('DailyVisitsPage/EndTimeFieldInDailyVisit'), CurrentTime)
+
+		WebUI.click(findTestObject('DailyVisitsPage/IncreaseMinutesArrow'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/IncreaseMinutesArrow'))
+
+		WebUI.scrollToElement(findTestObject('DailyVisitsPage/LocationFieldInDailyVisit'), 0)
+
+		WebUI.click(findTestObject('DailyVisitsPage/LocationFieldInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/FirstLocationInCreateDailyVisiyPage'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/NoCapacityButtonInDailyVisit'))
+
+		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
+
+		WebUI.click(findTestObject('Object Repository/DailyVisitsPage/HideAdminsButton'))
+
+		//		WebUI.scrollToElement(findTestObject('Object Repository/DailyVisitsPage/AssignNowInDailyVisit'), 0)
+
+		//		WebUI.click(findTestObject('Object Repository/DailyVisitsPage/AssignNowInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+
+		WebUI.scrollToElement(findTestObject('DailyVisitsPage/RequestOwnerSearchBoxInDailyVisit'), 0)
+
+		WebUI.sendKeys(findTestObject('DailyVisitsPage/RequestOwnerSearchBoxInDailyVisit'), 'test user')
+
+		WebUI.click(findTestObject('DailyVisitsPage/AdminUserInAssignRequestOwnerList'))
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -657,9 +944,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -721,9 +1008,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('Object Repository/CreateSessionsType/NextButton'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -797,9 +1084,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -867,9 +1154,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -964,9 +1251,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -1051,7 +1338,7 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
-		WebUI.click(findTestObject('DailyVisitsPage/YesSetCapacityOptionInDailyVisit'))
+		//		WebUI.click(findTestObject('DailyVisitsPage/YesSetCapacityOptionInDailyVisit'))
 
 		WebUI.click(findTestObject('DailyVisitsPage/NoCapacityButtonInDailyVisit'))
 
@@ -1076,11 +1363,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/SecondAdminUserInAssignRequestOwnerList'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
-
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -1170,9 +1455,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -1229,10 +1514,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
-
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
 		WebUI.click(findTestObject('DailyVisitsPage/PublishButtonInDailyVisit'))
@@ -1314,9 +1598,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/SecondAdminUserInAssignRequestOwnerList'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -1370,9 +1654,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -1435,9 +1719,9 @@ class CreateVisitWithDifferentStatuses {
 		//		WebUI.click(findTestObject('Object Repository/CreateSessionsType/NextButton'))
 
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 
@@ -1525,9 +1809,9 @@ class CreateVisitWithDifferentStatuses {
 
 		WebUI.click(findTestObject('DailyVisitsPage/SecondAdminUserInAssignRequestOwnerList'))
 
-		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
+		//		WebUI.scrollToElement(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), 0)
 
-		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
+		//		WebUI.click(findTestObject('DailyVisitsPage/AssignLaterButtonInDailyVisit'), FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('DailyVisitsPage/NextButtonInDailyVisit'))
 

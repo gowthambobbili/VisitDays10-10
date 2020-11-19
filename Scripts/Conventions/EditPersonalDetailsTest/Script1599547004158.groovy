@@ -36,8 +36,6 @@ def addressLine2=WebUI.getText(findTestObject('Object Repository/NacacStudentApp
 
 def city=WebUI.getText(findTestObject('Object Repository/NacacStudentApp/HomePageElements/personaldetails page/CityField'))
 
-def state=WebUI.getText(findTestObject('Object Repository/NacacStudentApp/HomePageElements/personaldetails page/StateField'))
-
 Random rd=new Random()
 
 def edit=rd.nextInt(1000)
@@ -51,8 +49,6 @@ def addressLine1Edit=addressLine1+edit
 def addressLine2Edit=addressLine2+edit
 
 def cityEdit=city+edit
-
-def stateEdit=state+edit
 
 WebUI.clearText(findTestObject('Object Repository/NacacStudentApp/HomePageElements/personaldetails page/FirstnameDetails'))
 
@@ -73,10 +69,6 @@ WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/HomePageElement
 WebUI.clearText(findTestObject('Object Repository/NacacStudentApp/HomePageElements/personaldetails page/CityField'))
 
 WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/HomePageElements/personaldetails page/CityField'),cityEdit)
-
-WebUI.clearText(findTestObject('Object Repository/NacacStudentApp/HomePageElements/personaldetails page/StateField'))
-
-WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/HomePageElements/personaldetails page/StateField'),stateEdit)
 
 WebUI.scrollToElement(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/SaveDetailsButton'), 10)
 

@@ -14,7 +14,7 @@ public class CreateconventionUsingSelfServeTool {
 
 	def num=rd.nextInt(10000)
 
-	def conventionName='TestConvention'+num
+	def conventionName='A TestConvention'+num
 
 	@Keyword
 	def GoToCreateConventionPage() {
@@ -55,15 +55,25 @@ public class CreateconventionUsingSelfServeTool {
 		WebUI.click(findTestObject('Object Repository/Self serve objects/ClickstartTimeMinute'))
 
 		WebUI.click(findTestObject('Object Repository/Self serve objects/StartTimeOfConventionMinute'))
-		
+
 		WebUI.click(findTestObject('Object Repository/Self serve objects/ClickOnEndMonthField'))
-		
+
 		WebUI.click(findTestObject('Object Repository/Self serve objects/DecemberOptionInEndDateField'))
-		
+
 		WebUI.click(findTestObject('Object Repository/Self serve objects/EndDateField'))
-		
+
 		WebUI.click(findTestObject('Object Repository/Self serve objects/EnddateLastDay'))
-		
+
+		String yearstring=WebUI.getText(findTestObject('Self serve objects/GetYearFromStartYearDropdown'))
+
+		int year=Integer.parseInt(yearstring)
+
+		def nextYear=year+1
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/ClickEndYear'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/SelectEndyear',['EndYear':nextYear]))
+
 		WebUI.click(findTestObject('Object Repository/Self serve objects/ClickEndTime'))
 
 		WebUI.click(findTestObject('Object Repository/Self serve objects/EndTimeOfConventionHour'))
@@ -81,12 +91,72 @@ public class CreateconventionUsingSelfServeTool {
 		WebUI.click(findTestObject('Object Repository/Self serve objects/ParentCheckBoxOfCreateConvention'))
 
 		WebUI.click(findTestObject('Object Repository/Self serve objects/TeacherCheckBoxOfCreateConvention'))
-		
+
 		WebUI.sendKeys(findTestObject('Object Repository/Self serve objects/MaxSessionsInput'), Keys.chord(Keys.CONTROL, 'a'))
-		
+
 		WebUI.sendKeys(findTestObject('Object Repository/Self serve objects/MaxSessionsInput'), Keys.chord(Keys.BACK_SPACE))
 
 		WebUI.sendKeys(findTestObject('Object Repository/Self serve objects/MaxSessionsInput'),'10')
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/CreateConventionButton'))
+	}
+	@Keyword
+	def EnterConventionNameAndDetailsFixedLength() {
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Self serve objects/ConventionName'),0)
+
+		WebUI.sendKeys(findTestObject('Object Repository/Self serve objects/ConventionName'),conventionName)
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/ClickStartTime'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/StartTimeOfConvention'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/ClickstartTimeMinute'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/StartTimeOfConventionMinute'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/ClickOnEndMonthField'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/DecemberOptionInEndDateField'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/EndDateField'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/EnddateLastDay'))
+
+		String yearstring=WebUI.getText(findTestObject('Self serve objects/GetYearFromStartYearDropdown'))
+
+		int year=Integer.parseInt(yearstring)
+
+		def nextYear=year+1
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/ClickEndYear'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/SelectEndyear',['EndYear':nextYear]))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/ClickEndTime'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/EndTimeOfConventionHour'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/ClickEndTimeMinute'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/EndTimeOfConventionMinute'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/ClickTimeZoneOfConvention'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/AmericaNewYorkZone'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/StudentCheckBoxOfCreateConvention'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/ParentCheckBoxOfCreateConvention'))
+
+		WebUI.click(findTestObject('Object Repository/Self serve objects/TeacherCheckBoxOfCreateConvention'))
+
+		WebUI.sendKeys(findTestObject('Object Repository/Self serve objects/MaxSessionsInput'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Object Repository/Self serve objects/MaxSessionsInput'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.sendKeys(findTestObject('Object Repository/Self serve objects/MaxSessionsInput'),'10')
+
+		WebUI.sendKeys(findTestObject('Object Repository/Self serve objects/ConventionDurationMinutes'),'180')
 
 		WebUI.click(findTestObject('Object Repository/Self serve objects/CreateConventionButton'))
 	}
@@ -100,16 +170,18 @@ public class CreateconventionUsingSelfServeTool {
 
 		String ConventionNAME=convention.trim()
 
-		GlobalVariable.createdConventionName=ConventionNAME
+		//		GlobalVariable.createdConventionName=ConventionNAME
 
-		WebUI.waitForElementPresent(findTestObject('Object Repository/Self serve objects/ViewExhibitorsButtonOfConvention',['conventionName':GlobalVariable.createdConventionName]),0)
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Self serve objects/ViewExhibitorsButtonOfConvention',['conventionName':ConventionNAME]),0)
 
-		WebUI.click(findTestObject('Object Repository/Self serve objects/ViewExhibitorsButtonOfConvention',['conventionName':GlobalVariable.createdConventionName]))
+		WebUI.click(findTestObject('Object Repository/Self serve objects/ViewExhibitorsButtonOfConvention',['conventionName':ConventionNAME]))
 
 		WebUI.click(findTestObject('Object Repository/Self serve objects/SelectinstitutionDropDown'))
 
 		WebUI.click(findTestObject('Object Repository/Self serve objects/SelectInstitutionValue',['InstitutionName':GlobalVariable.InstitutionValue]))
 
 		WebUI.click(findTestObject('Object Repository/Self serve objects/AddInstitutionButton'))
+
+		return ConventionNAME
 	}
 }

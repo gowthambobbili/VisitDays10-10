@@ -720,6 +720,8 @@ class ConfirmationPage {
 
 		WebUI.click(findTestObject('Add Attendee/NextButtonInAddAttendee'))
 
+		WebUI.delay(4)
+
 		WebUI.click(VisitTypeCategory)
 
 		WebUI.waitForElementPresent(findTestObject('Add Attendee/VisitTypeDivisionInAddAttendee'), 0)
@@ -796,7 +798,7 @@ class ConfirmationPage {
 		WebUI.sendKeys(findTestObject('Add Attendee/Group/HowmanyChaperonesQuestion'), '3')
 
 
-		WebUI.click(findTestObject('Add Attendee/Group/NoOptionInYourGroupBeEatingLunchQuestion'))
+		//		WebUI.click(findTestObject('Add Attendee/Group/NoOptionInYourGroupBeEatingLunchQuestion'))
 
 		String OrgName = 'Orgnazation'+RandVar.nextInt(9000).toString()
 
@@ -1071,12 +1073,14 @@ class ConfirmationPage {
 
 			WebUI.click(findTestObject('Add Attendee/NextButtonInAddAttendee'))
 
+			WebUI.delay(4)
+
 			WebUI.click(VisitTypeCategory)
 
-			//		if(VisitTypeCategory==findTestObject('Object Repository/Add Attendee/DailyVisitsOptionInAddAttendee'))
-			//		{
-			//			WebUI.click(findTestObject('Object Repository/Add Attendee/RightArrowToNavigateNextDate'))
-			//		}
+			if(VisitTypeCategory==findTestObject('Object Repository/Add Attendee/DailyVisitsOptionInAddAttendee'))
+			{
+				WebUI.click(findTestObject('Object Repository/Add Attendee/RightArrowToNavigateNextDate'))
+			}
 			if(WebUI.verifyElementPresent(findTestObject('Object Repository/Add Attendee/RightArrowToNavigateNextDate'), 10, FailureHandling.OPTIONAL))
 			{
 				WebUI.click(findTestObject('Object Repository/Add Attendee/RightArrowToNavigateNextDate'))
@@ -1110,20 +1114,20 @@ class ConfirmationPage {
 
 			WebUI.delay(5)
 
-			//			WebUI.click(findTestObject('Add Attendee/HowManyGuestsDropDown'))
+			WebUI.click(findTestObject('Add Attendee/HowManyGuestsDropDown'))
 
-			//			WebUI.click(findTestObject('Add Attendee/FirstOptionInHowManyGuestsDropdown'))
+			WebUI.click(findTestObject('Add Attendee/FirstOptionInHowManyGuestsDropdown'))
 
 			//			if (WebUI.verifyElementPresent(findTestObject('Add Attendee/YesOptionInAccessibilityNeedForIndividual'), 3, FailureHandling.OPTIONAL)) {
 			//				WebUI.click(findTestObject('Add Attendee/NoRadioButtonInAccessibilityNeeds'))
 			//			}
 
-			//			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Add Attendee/DietaryNeedsDropdown'), 3, FailureHandling.OPTIONAL))
-			//			 {
-			WebUI.click(findTestObject('Object Repository/Add Attendee/DietaryNeedsDropdown'))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Add Attendee/DietaryNeedsDropdown'), 3, FailureHandling.OPTIONAL))
+			{
+				WebUI.click(findTestObject('Object Repository/Add Attendee/DietaryNeedsDropdown'))
 
-			WebUI.click(findTestObject('Object Repository/Add Attendee/NoneOptionsInDietaryNeedsDropdown'))
-			//			}
+				WebUI.click(findTestObject('Object Repository/Add Attendee/NoneOptionsInDietaryNeedsDropdown'))
+			}
 			//			WebUI.click(findTestObject('Add Attendee/RegisterButtonInAddAttendee'))
 
 
@@ -1228,13 +1232,15 @@ class ConfirmationPage {
 				WebUI.click(findTestObject('Object Repository/Add Attendee/VisitTimeButtonInMobi(VisitType)', ["VisitType":VisitTypes[i]]))
 			}
 
+			WebUI.click(findTestObject('Add Attendee/NextButtonInAddAttendee'))
+
 			WebUI.waitForElementVisible(findTestObject('Add Attendee/RegisterButtonInAddAttendee'), 0)
 
 			WebUI.click(findTestObject('Add Attendee/RegisterButtonInAddAttendee'))
 
-			WebUI.sendKeys(findTestObject('Add Attendee/Group/HowmanyProspectiveStudentsQuestion'), '3')
+			//			WebUI.sendKeys(findTestObject('Add Attendee/Group/HowmanyProspectiveStudentsQuestion'), '3')
 
-			WebUI.sendKeys(findTestObject('Add Attendee/Group/HowmanyChaperonesQuestion'), '3')
+			//			WebUI.sendKeys(findTestObject('Add Attendee/Group/HowmanyChaperonesQuestion'), '3')
 			//
 			//
 			////			if (WebUI.verifyElementPresent(findTestObject('Add Attendee/Group/YesOptionInAccessibilityNeedInGroup'), 3, FailureHandling.OPTIONAL)) {
@@ -1264,12 +1270,11 @@ class ConfirmationPage {
 			WebUI.sendKeys(findTestObject('Add Attendee/EmailInStudentInformationPage'), 'test@email.com')
 
 			WebUI.sendKeys(findTestObject('Add Attendee/ContactNumberInStudentInformationPage'), '9898989898')
+			WebUI.sendKeys(findTestObject('Add Attendee/Group/HowmanyProspectiveStudentsQuestion'), '3')
 
-			//			WebUI.sendKeys(findTestObject('Add Attendee/Group/HowmanyProspectiveStudentsQuestion'), '3')
-			//
-			//		   WebUI.sendKeys(findTestObject('Add Attendee/Group/HowmanyChaperonesQuestion'), '3')
+			WebUI.sendKeys(findTestObject('Add Attendee/Group/HowmanyChaperonesQuestion'), '3')
 
-			WebUI.click(findTestObject('Add Attendee/Group/NoOptionInYourGroupBeEatingLunchQuestion'))
+			//			WebUI.click(findTestObject('Add Attendee/Group/NoOptionInYourGroupBeEatingLunchQuestion'))
 
 			String OrgName = 'Orgnazation'+RandVar.nextInt(9000).toString()
 

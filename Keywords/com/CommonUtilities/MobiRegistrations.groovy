@@ -123,11 +123,11 @@ class MobiRegistrations {
 		//			WebUI.click(findTestObject('Add Attendee/NoRadioButtonInAccessibilityNeeds'))
 		//		}
 
-		if (WebUI.verifyElementPresent(findTestObject('Object Repository/Add Attendee/DietaryNeedsDropdown'), 3, FailureHandling.OPTIONAL)) {
-			WebUI.click(findTestObject('Object Repository/Add Attendee/DietaryNeedsDropdown'))
-
-			WebUI.click(findTestObject('Object Repository/Add Attendee/NoneOptionsInDietaryNeedsDropdown'))
-		}
+//		if (WebUI.verifyElementPresent(findTestObject('Object Repository/Add Attendee/DietaryNeedsDropdown'), 3, FailureHandling.OPTIONAL)) {
+//			WebUI.click(findTestObject('Object Repository/Add Attendee/DietaryNeedsDropdown'))
+//
+//			WebUI.click(findTestObject('Object Repository/Add Attendee/NoneOptionsInDietaryNeedsDropdown'))
+//		}
 
 		//		WebUI.click(findTestObject('Object Repository/Add Attendee/NextButtonInAddAttendee'))
 
@@ -352,7 +352,7 @@ class MobiRegistrations {
 
 		WebUI.sendKeys(findTestObject('Add Attendee/ContactNumberInStudentInformationPage'), '9898989898')
 
-		WebUI.click(findTestObject('Add Attendee/Group/NoOptionInYourGroupBeEatingLunchQuestion'))
+//		WebUI.click(findTestObject('Add Attendee/Group/NoOptionInYourGroupBeEatingLunchQuestion'))
 
 		String OrgName = 'Orgnazation'+RandVar.nextInt(9000).toString()
 

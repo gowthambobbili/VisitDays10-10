@@ -767,50 +767,8 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDayOfWeek"(
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.setDefaultTimeZone"(
-    	String timeZoneId	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).setDefaultTimeZone(
-        	timeZoneId)
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDateTime"(
-    	String timeZoneId	
-     , 	String dateTimeFormat	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentDateTime(
-        	timeZoneId
-         , 	dateTimeFormat)
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPreviousDateTime"(
-    	int noOfDays	
-     , 	String timeZoneId	
-     , 	String dateTimeFormat	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPreviousDateTime(
-        	noOfDays
-         , 	timeZoneId
-         , 	dateTimeFormat)
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getFutureDateTime"(
-    	int noOfDays	
-     , 	String timeZoneId	
-     , 	String dateTimeFormat	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getFutureDateTime(
-        	noOfDays
-         , 	timeZoneId
-         , 	dateTimeFormat)
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.convertString2Date"(
-    	String value	
-     , 	String dateTimeFormat	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).convertString2Date(
-        	value
-         , 	dateTimeFormat)
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDefaultTimeZone"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getDefaultTimeZone()
 }
 
 
@@ -834,13 +792,8 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.addDays"(
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDefaultTimeZone"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getDefaultTimeZone()
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDate"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentDate()
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentMonth"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentMonth()
 }
 
 
@@ -858,6 +811,15 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getFutureTime"(
 }
 
 
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPastTime"(
+    	int hrs	
+     , 	int minute	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPastTime(
+        	hrs
+         , 	minute)
+}
+
+
 def static "com.kms.katalon.keyword.datetime.DateTimeUtility.formatStringDate"(
     	String value	
      , 	String currentFormat	
@@ -869,17 +831,55 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.formatStringDate"(
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPastTime"(
-    	int hrs	
-     , 	int minute	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPastTime(
-        	hrs
-         , 	minute)
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDate"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentDate()
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentMonth"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentMonth()
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getFutureDateTime"(
+    	int noOfDays	
+     , 	String timeZoneId	
+     , 	String dateTimeFormat	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getFutureDateTime(
+        	noOfDays
+         , 	timeZoneId
+         , 	dateTimeFormat)
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPreviousDateTime"(
+    	int noOfDays	
+     , 	String timeZoneId	
+     , 	String dateTimeFormat	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPreviousDateTime(
+        	noOfDays
+         , 	timeZoneId
+         , 	dateTimeFormat)
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.convertString2Date"(
+    	String value	
+     , 	String dateTimeFormat	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).convertString2Date(
+        	value
+         , 	dateTimeFormat)
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.setDefaultTimeZone"(
+    	String timeZoneId	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).setDefaultTimeZone(
+        	timeZoneId)
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDateTime"(
+    	String timeZoneId	
+     , 	String dateTimeFormat	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentDateTime(
+        	timeZoneId
+         , 	dateTimeFormat)
 }
 
 
@@ -1732,6 +1732,13 @@ def static "com.CommonUtilities.CreateVisitWithDifferentStatuses.CreateDailyVisi
 }
 
 
+def static "com.CommonUtilities.CreateVisitWithDifferentStatuses.CreateDailyVisitWithInprogressTimesAndHideAdmins"(
+    	String VisitType	) {
+    (new com.CommonUtilities.CreateVisitWithDifferentStatuses()).CreateDailyVisitWithInprogressTimesAndHideAdmins(
+        	VisitType)
+}
+
+
 def static "com.CommonUtilities.CreateVisitWithDifferentStatuses.CreateSessionVisitWithinProgressTimes"(
     	String VisitType	) {
     (new com.CommonUtilities.CreateVisitWithDifferentStatuses()).CreateSessionVisitWithinProgressTimes(
@@ -1762,9 +1769,23 @@ def static "com.CommonUtilities.CreateVisitWithDifferentStatuses.CreateEventWith
 }
 
 
+def static "com.CommonUtilities.CreateVisitWithDifferentStatuses.CreateEventWithInprogressTimesAndHideAdmins"(
+    	String VisitType	) {
+    (new com.CommonUtilities.CreateVisitWithDifferentStatuses()).CreateEventWithInprogressTimesAndHideAdmins(
+        	VisitType)
+}
+
+
 def static "com.CommonUtilities.CreateVisitWithDifferentStatuses.CreateOffCampusWithInprogressTimes"(
     	String VisitType	) {
     (new com.CommonUtilities.CreateVisitWithDifferentStatuses()).CreateOffCampusWithInprogressTimes(
+        	VisitType)
+}
+
+
+def static "com.CommonUtilities.CreateVisitWithDifferentStatuses.CreateOffCampusWithInprogressTimesAndHideAdmins"(
+    	String VisitType	) {
+    (new com.CommonUtilities.CreateVisitWithDifferentStatuses()).CreateOffCampusWithInprogressTimesAndHideAdmins(
         	VisitType)
 }
 
@@ -1979,6 +2000,11 @@ def static "com.CommonUtilities.CreateconventionUsingSelfServeTool.EnterConventi
 }
 
 
+def static "com.CommonUtilities.CreateconventionUsingSelfServeTool.EnterConventionNameAndDetailsFixedLength"() {
+    (new com.CommonUtilities.CreateconventionUsingSelfServeTool()).EnterConventionNameAndDetailsFixedLength()
+}
+
+
 def static "com.CommonUtilities.CreateconventionUsingSelfServeTool.SelectExhibitor"() {
     (new com.CommonUtilities.CreateconventionUsingSelfServeTool()).SelectExhibitor()
 }
@@ -2027,6 +2053,13 @@ def static "com.CommonUtilities.CreateLiveSession.selectConvention"() {
 }
 
 
+def static "com.CommonUtilities.CreateLiveSession.selectFixedLengthConvention"(
+    	Object conName	) {
+    (new com.CommonUtilities.CreateLiveSession()).selectFixedLengthConvention(
+        	conName)
+}
+
+
 def static "com.CommonUtilities.CreateLiveSession.enterLiveSessionDetailsAndTime"() {
     (new com.CommonUtilities.CreateLiveSession()).enterLiveSessionDetailsAndTime()
 }
@@ -2037,8 +2070,23 @@ def static "com.CommonUtilities.CreateLiveSession.enterLiveSessionDetailsAndFutu
 }
 
 
+def static "com.CommonUtilities.CreateLiveSession.enterLiveSessionDetailsAndTimeForFixedLengthConventions"() {
+    (new com.CommonUtilities.CreateLiveSession()).enterLiveSessionDetailsAndTimeForFixedLengthConventions()
+}
+
+
+def static "com.CommonUtilities.CreateLiveSession.enterLiveSessionDetailsAndTimeForFutureTimeFixedLengthConventions"() {
+    (new com.CommonUtilities.CreateLiveSession()).enterLiveSessionDetailsAndTimeForFutureTimeFixedLengthConventions()
+}
+
+
 def static "com.CommonUtilities.CreateLiveSession.enterZoomIdAndAddAssigne"() {
     (new com.CommonUtilities.CreateLiveSession()).enterZoomIdAndAddAssigne()
+}
+
+
+def static "com.CommonUtilities.CreateLiveSession.enterZoomIdAndAddAssigneeIncludingTags"() {
+    (new com.CommonUtilities.CreateLiveSession()).enterZoomIdAndAddAssigneeIncludingTags()
 }
 
 

@@ -6,11 +6,11 @@
    <elementGuidId>c1c473c8-f858-417d-a500-135da014d84f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//ul[@class=&quot;link-follower-parent ember-view&quot;]//a[text()=&quot;Off Campus&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//td[@class=&quot;new day&quot;])[2]</value>
+         <value>(//td[@class=&quot;day&quot;])[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>

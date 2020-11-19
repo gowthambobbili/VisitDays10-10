@@ -69,13 +69,14 @@ public class SignUpFlow {
 	@Keyword
 	def enterAddressDetails() {
 		WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/CellPhoneNumberField'),"9642799604")
+		WebUI.click(findTestObject('Object Repository/NacacStudentApp/SignUpPage/CountryDropDown'))
+		WebUI.click(findTestObject('Object Repository/NacacStudentApp/SignUpPage/USACountryInDropDown'))
 		WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/AddressLineOne'),"test address")
 		WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/AddressLineTwo'),"test address two")
 		WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/CityTextField'),"New York")
-		WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/StateTextField'),"New York")
+		WebUI.click(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StateDropDown'))
+		WebUI.click(findTestObject('Object Repository/NacacStudentApp/SignUpPage/NewYorkStateInDropDown'))
 		WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/PostalOrZipCode'),"10002")
-		WebUI.click(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/Country dropdown'))
-		WebUI.click(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/USA option in dropdown'))
 		WebUI.scrollToElement(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/DOBtextField'),0)
 
 		return "NewYork"
@@ -97,6 +98,8 @@ public class SignUpFlow {
 	}
 	@Keyword
 	def selectApplicantType() {
+
+		WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/SignUpPage/ProgramsTesxField'),"Agriculture")
 
 		WebUI.scrollToElement(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/FirstYearCollegeStudent'),0)
 

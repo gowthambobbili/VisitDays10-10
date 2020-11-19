@@ -67,7 +67,15 @@ if(!(WebUI.verifyElementPresent(findTestObject('Object Repository/NacacStudentAp
 {
 	KeywordUtil.markFailed("Remind me button is not present in the live session of sessions page")
 }
-WebUI.click(findTestObject('Object Repository/NacacStudentApp/HomePageElements/RemindMeButton',['createdSession':sessionName]))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/NacacStudentApp/HomePageElements/CreatedSession',['createdSession':sessionName]))
+
+WebUI.delay(5)
+//WebUI.click(findTestObject('Object Repository/NacacStudentApp/HomePageElements/RemindMeButton',['createdSession':sessionName]))
+
+WebUI.click(findTestObject('Object Repository/NacacStudentApp/HomePageElements/RemindMeButtonInsideSession'))
 
 WebUI.scrollToElement(findTestObject('Object Repository/NacacStudentApp/HomePageElements/ItinenariesOption'), 0, FailureHandling.OPTIONAL)
 

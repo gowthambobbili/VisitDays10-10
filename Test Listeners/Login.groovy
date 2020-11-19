@@ -27,7 +27,7 @@ class Login {
 	/*
 	 * Login as Admin user to staging
 	 */
-//	   @BeforeTestCase
+//  @BeforeTestCase
 	def loginBeforeTestCaseAsAdmin(TestCaseContext testCaseContext){
 		
 		CustomKeywords.'com.CommonUtilities.LoginAsDifferentUserPermissions.LoginAsSchoolAdmin'()

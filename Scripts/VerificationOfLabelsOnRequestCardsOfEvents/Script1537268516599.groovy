@@ -132,6 +132,8 @@ driver.findElement(By.xpath(('//div[@class="visit-name"]//p[text()="' + EventVis
 
 WebUI.verifyElementPresent(findTestObject('DailyVisitsPage/RegistrantsTabInVisitCard'), 0)
 
+WebUI.refresh()
+
 WebUI.waitForElementPresent(findTestObject('DailyVisitsPage/RequestUnderPendingTab'), 0)
 
 WebUI.verifyElementPresent(findTestObject('DailyVisitsPage/RequestUnderPendingTab'), 0)

@@ -72,7 +72,7 @@ String flag
 String SecondVisitTypeName
 
 //if (WebUI.verifyElementPresent(findTestObject('Add Attendee/AddToMyItineraryRandomButtonInMobi'), 0, FailureHandling.OPTIONAL)) {
-//	SecondVisitTypeName = WebUI.getText(findTestObject('Add Attendee/VisitTypeNameOfFirstAddToMyItineraryButtonInThePage'))
+//SecondVisitTypeName = WebUI.getText(findTestObject('Add Attendee/VisitTypeNameOfFirstAddToMyItineraryButtonInThePage'))
 //
 //	WebUI.click(findTestObject('Add Attendee/AddToMyItineraryRandomButtonInMobi'))
 //
@@ -80,16 +80,16 @@ String SecondVisitTypeName
 //
 //	WebUI.delay(2)
 //
-//	WebUI.verifyElementText(findTestObject('Add Attendee/SecondVisitTypeInMyItineraryPopover'), SecondVisitTypeName, FailureHandling.OPTIONAL)
+//WebUI.verifyElementText(findTestObject('Add Attendee/SecondVisitTypeInMyItineraryPopover'), SecondVisitTypeName, FailureHandling.OPTIONAL)
 //
 //	flag = 'true'
 //}
 //
 //if (flag == 'true') {
-//	WebUI.click(findTestObject('Add Attendee/CloseButtonInMyItineraryPopover'))
+//		WebUI.click(findTestObject('Add Attendee/CloseButtonInMyItineraryPopover'))
 //}
-
-WebUI.delay(2)
+//
+//WebUI.delay(2)
 
 WebUI.click(findTestObject('Add Attendee/NextButtonInAddAttendee'))
 
@@ -99,9 +99,9 @@ WebUI.click(findTestObject('Add Attendee/MyItineraryPopOver'))
 
 WebUI.delay(2)
 
-if (flag == 'true') {
-	WebUI.verifyElementText(findTestObject('Add Attendee/SecondVisitTypeInMyItineraryPopover'), SecondVisitTypeName, FailureHandling.OPTIONAL)
-}
+//if (flag == 'true') {
+//	WebUI.verifyElementText(findTestObject('Add Attendee/SecondVisitTypeInMyItineraryPopover'), SecondVisitTypeName, FailureHandling.OPTIONAL)
+//}
 
 WebUI.click(findTestObject('Add Attendee/CloseButtonInMyItineraryPopover'))
 
@@ -109,29 +109,25 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Add Attendee/HowManyGuestsDropDown'))
 
-//
-WebUI.click(findTestObject('Add Attendee/FirstOptionInHowManyGuestsDropdown'))
 
+WebUI.click(findTestObject('Add Attendee/FirstOptionInHowManyGuestsDropdown'))
 
 if (WebUI.verifyElementPresent(findTestObject('Object Repository/Add Attendee/DietaryNeedsDropdown'), 0, FailureHandling.OPTIONAL)) {
 	WebUI.click(findTestObject('Object Repository/Add Attendee/DietaryNeedsDropdown'))
 
-	WebUI.click(findTestObject('Object Repository/Add Attendee/NoneOptionsInDietaryNeedsDropdown'))
+WebUI.click(findTestObject('Object Repository/Add Attendee/NoneOptionsInDietaryNeedsDropdown'))
 }
 
-//
 WebUI.click(findTestObject('Object Repository/Add Attendee/NextButtonInAddAttendee'))
 
-//
 WebUI.click(findTestObject('Add Attendee/MyItineraryPopOver'))
 
-//
 WebUI.delay(2)
 
 
-//if (flag == 'true') {
-//	WebUI.verifyElementText(findTestObject('Add Attendee/SecondVisitTypeInMyItineraryPopover'), SecondVisitTypeName, FailureHandling.OPTIONAL)
-//}
+if (flag == 'true') {
+	WebUI.verifyElementText(findTestObject('Add Attendee/SecondVisitTypeInMyItineraryPopover'), SecondVisitTypeName, FailureHandling.OPTIONAL)
+}
 
 WebUI.click(findTestObject('Add Attendee/CloseButtonInMyItineraryPopover'))
 
@@ -156,9 +152,9 @@ WebUI.delay(5)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Add Attendee/FiterByLocationCheckboxInOffCampus'), 0)
 
-driver.findElement(By.xpath(('//strong[text()=\'' + VisitType) + '\']/../../../..//button[text()=\'Add to My Itinerary\']')).isDisplayed()
+driver.findElement(By.xpath(('//h1[text()=\'' + VisitType) + '\']/../../../..//button[text()=\'Add to My Itinerary\']')).isDisplayed()
 
-driver.findElement(By.xpath(('//strong[text()=\'' + VisitType) + '\']/../../../..//button[text()=\'Add to My Itinerary\']')).click()
+driver.findElement(By.xpath(('//h1[text()=\'' + VisitType) + '\']/../../../..//button[text()=\'Add to My Itinerary\']')).click()
 
 WebUI.click(findTestObject('Add Attendee/MyItineraryPopOver'))
 
@@ -196,7 +192,7 @@ WebUI.click(findTestObject('Add Attendee/NextButtonInAddAttendee'))
 
 WebUI.click(findTestObject('Add Attendee/RegisterButtonInAddAttendee'))
 
-WebUI.click(findTestObject('Add Attendee/MyItineraryPopOver'))
+//WebUI.click(findTestObject('Add Attendee/MyItineraryPopOver'))
 
 WebUI.delay(2)
 

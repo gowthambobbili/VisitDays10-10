@@ -9,6 +9,7 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>e2ac4e58-be3f-486d-a180-68d5a8f757fd</testSuiteGuid>
    <testCaseLink>
       <guid>15998da5-1140-433f-afd2-6cb3de102670</guid>
@@ -19,25 +20,25 @@
    <testCaseLink>
       <guid>29234c7e-56e1-44e6-bfcd-4f465fd0436f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/AddVisitToItineraryConflictingTimesAndNonPublihedVisitsTest (Daily Visits)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e2ebc5aa-a597-4904-9035-1d5fabaa5adc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/AddVisitToItineraryConflictingTimesAndNonPublihedVisitsTest (Events)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2712ac6c-9e5a-4f31-b7cf-fbf0ccbec1a7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/AddVisitToItineraryConflictingTimesAndNonPublihedVisitsTest (Off-Campus)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>be516593-d20f-4056-a50a-fe6ccf8a450d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/AddVisitToItineraryOptionVerificationForCanceledUserProfiles(Daily visits)</testCaseId>
    </testCaseLink>
    <testCaseLink>

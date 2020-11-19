@@ -97,7 +97,9 @@ if(!(WebUI.verifyElementPresent(findTestObject('Object Repository/NacacStudentAp
 }
 WebUI.click(findTestObject('Object Repository/NacacStudentApp/HomePageElements/RemoveButtonInMyFairs',['SessionName':meetName]))
 
-WebUI.delay(10)
+WebUI.delay(5)
+
+WebUI.refresh()
 
 if((WebUI.verifyElementPresent(findTestObject('Object Repository/NacacStudentApp/HomePageElements/VersifySessionInMyEventsPage',['SName':meetName]),5,FailureHandling.OPTIONAL)))
 {

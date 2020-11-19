@@ -24,7 +24,7 @@ import internal.GlobalVariable
 public class VideoLibrary {
 	Random r1=new Random()
 	def num=r1.nextInt(1000)
-	def videoName="video"+num
+	def videoName="a video"+num
 	def videoAddress="https://youtu.be/tVlz6lYxGX8"
 	@Keyword
 	def addVideoToVideoLibrary() {

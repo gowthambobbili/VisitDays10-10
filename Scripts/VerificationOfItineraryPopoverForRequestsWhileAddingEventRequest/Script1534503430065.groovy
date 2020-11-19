@@ -209,16 +209,16 @@ WebUI.click(findTestObject('Add Attendee/NextButtonInAddAttendee'))
 
 WebUI.click(findTestObject('Add Attendee/RegisterButtonInAddAttendee'))
 
-WebUI.click(findTestObject('Add Attendee/MyItineraryPopOver'))
+//WebUI.click(findTestObject('Add Attendee/MyItineraryPopOver'))
 
 WebUI.delay(2)
 
 //WebUI.verifyElementText(findTestObject('Add Attendee/VisitTypeNameInPopOver'), VisitType)
 
-if (Groupflag == 'true') {
-	WebUI.verifyElementText(findTestObject('Add Attendee/SecondVisitTypeInMyItineraryPopover'), SecondVisitTypeNameInGroup,
-		FailureHandling.OPTIONAL)
-}
+//if (Groupflag == 'true') {
+//	WebUI.verifyElementText(findTestObject('Add Attendee/SecondVisitTypeInMyItineraryPopover'), SecondVisitTypeNameInGroup,
+//		FailureHandling.OPTIONAL)
+//}
 
 CustomKeywords.'com.CommonUtilities.Quit.QuitMobi'()
 

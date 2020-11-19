@@ -84,6 +84,6 @@ TextOnRegisteredTab = TextOnRegisteredTab.split(" ")[1]
 
 println(TextOnRegisteredTab)
 
-CustomKeywords.'com.CommonUtilities.Verifications.VerifyTextMatch'(TextOnRegisteredTab, '3', 'When added an inddividual directly to a scheduled (request) visit then the count on the Registered tab is shown in correct, Expected count: 2, Actual count: ' +
+CustomKeywords.'com.CommonUtilities.Verifications.VerifyTextMatch'(TextOnRegisteredTab, '(3)', 'When added an inddividual directly to a scheduled (request) visit then the count on the Registered tab is shown in correct, Expected count: 2, Actual count: ' +
 		TextOnRegisteredTab)
 

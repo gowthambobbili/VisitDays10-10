@@ -746,19 +746,19 @@
    <testCaseLink>
       <guid>318ebc0b-aedf-40ca-9096-e730c7d8f3c5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/VerificationOfStatusInStudentProfileWhenRegisteredFromMobi (Daily visits)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>6e304f42-ac98-40ae-af8f-af5cee9b55eb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/VerificationOfStatusInStudentProfileWhenRegisteredFromMobi (Events)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>81de277b-5d64-4785-b435-a3f785cf3726</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/VerificationOfStatusInStudentProfileWhenRegisteredFromMobi (Off-Campus)</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -848,25 +848,25 @@
    <testCaseLink>
       <guid>48841d9a-d27f-4dd6-83cd-5825c833b556</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/DeleteAllDraftedVisitsTest (Daily Visits)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a5297389-1286-4f53-89c7-5694b3645d17</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/DeleteAllDraftedVisitsTest (Off-Campus)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c7c8c149-70c2-428d-b8ea-cf2f5b7b7672</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/DeleteAllDraftedVisitsTest (Events)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a5e03ebd-364b-48c1-ba18-86e915b2d3de</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/DetailsPageAndUnsavedChangesModalVerificationInUserprofile</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -950,7 +950,7 @@
    <testCaseLink>
       <guid>2da3a854-48d8-486f-b6e8-65afa6fee58d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/GlobalSearchTest</testCaseId>
    </testCaseLink>
    <testCaseLink>

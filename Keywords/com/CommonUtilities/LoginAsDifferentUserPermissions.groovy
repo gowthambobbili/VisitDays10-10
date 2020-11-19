@@ -109,6 +109,7 @@ class LoginAsDifferentUserPermissions {
 		WebUI.waitForElementPresent(findTestObject('HomePageElements/ProfileAvatar'), 0)
 
 		WebUI.click(findTestObject('Object Repository/HomePageElements/SchoolProdoutNav'))
+		
 	}
 
 
@@ -180,7 +181,7 @@ class LoginAsDifferentUserPermissions {
 
 		WebUI.click(findTestObject('Object Repository/NacacStudentApp/HomePageElements/LoginButton'))
 
-		WebUI.waitForPageLoad(10)
+		WebUI.waitForPageLoad(0)
 	}
 
 

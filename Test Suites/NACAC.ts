@@ -20,7 +20,7 @@
    <testCaseLink>
       <guid>9a603868-d37f-49f8-a2e9-ac75a2828e23</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Conventions/Create new Convention</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -32,7 +32,7 @@
    <testCaseLink>
       <guid>de659178-96ce-440f-89f8-a6dcd6f92cb6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Conventions/AddVideoInAdminAndVerifyInStudentApp</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -42,16 +42,28 @@
       <testCaseId>Test Cases/Conventions/CreateLiveSessionAndVerifyInStudentApp</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>cefb4119-5d9b-41e1-9664-1398c5c9fc48</guid>
+      <guid>880519fa-82dd-4bd0-ae5f-dbdfbfe1e9a3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Conventions/CreateMeetingAndVerifyInStudentApp</testCaseId>
+      <testCaseId>Test Cases/Conventions/VerifyLivesessionInStudentApp</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f9994d17-a6fc-4340-827d-8da325077f15</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Conventions/RemindUpcomingLiveSessions</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>887b0475-88ce-4762-bbe6-657a09e8eeb4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Conventions/VerifyStudentIsPresentInProspectsListAfterJoinLiveSession</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cefb4119-5d9b-41e1-9664-1398c5c9fc48</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Conventions/CreateMeetingAndVerifyInStudentApp</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>35d47c48-95fd-4709-ad00-aa23091e63b0</guid>
@@ -70,18 +82,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Conventions/VerifyLiveSessionAttendiesInAdminApp</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>880519fa-82dd-4bd0-ae5f-dbdfbfe1e9a3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Conventions/VerifyLivesessionInStudentApp</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>887b0475-88ce-4762-bbe6-657a09e8eeb4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Conventions/VerifyStudentIsPresentInProspectsListAfterJoinLiveSession</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9d3a4c6a-5a93-4428-ab2d-3560eb16c48b</guid>
@@ -106,6 +106,18 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Conventions/VerifySearchCollegeIsShowingResults</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>23f31753-d6ad-437c-b056-047265d06a2c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Conventions/VerifyFiltersInLiveSessionsPage</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c3ba4dc9-2433-40f7-b10c-6ecb3df67f4c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Conventions/VerifyAttachmentsArePresentInStudentApp</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9466b8cc-c0cb-42e8-b1e3-3804778fcc0e</guid>

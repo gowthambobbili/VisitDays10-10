@@ -68,7 +68,7 @@ public class SignUpFlow {
 	}
 	@Keyword
 	def enterAddressDetails() {
-		WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/CellPhoneNumberField'),"9642799604")
+		WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/CellPhoneNumberField'),"(484) 693-0061")
 		WebUI.click(findTestObject('Object Repository/NacacStudentApp/SignUpPage/CountryDropDown'))
 		WebUI.click(findTestObject('Object Repository/NacacStudentApp/SignUpPage/USACountryInDropDown'))
 		WebUI.sendKeys(findTestObject('Object Repository/NacacStudentApp/SignUpPage/StudentdetailsPage/AddressLineOne'),"test address")

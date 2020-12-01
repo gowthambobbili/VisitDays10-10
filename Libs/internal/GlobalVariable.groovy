@@ -123,7 +123,9 @@ Profile Pikachu Staging : albrightsandbox , bbtesting</p>
     public static Object institutionId
      
     /**
-     * <p></p>
+     * <p>Profile Charizard Staging : https:&#47;&#47;bais-charizard.visitdays.vercel.app&#47;, https:&#47;&#47;nacac-charizard.visitdays.vercel.app&#47;
+Profile Metapod Staging : https:&#47;&#47;bais-metapod.visitdays.vercel.app&#47;
+Profile Pikachu Staging : https:&#47;&#47;bais-pikachu.visitdays.vercel.app&#47; ,https:&#47;&#47;nacac-pikachu.visitdays.vercel.app&#47;</p>
      */
     public static Object studenturl
      
@@ -141,6 +143,13 @@ Profile Pikachu Staging : albrightsandbox , bbtesting</p>
      * <p></p>
      */
     public static Object InstitutionValue
+     
+    /**
+     * <p>Profile Charizard Staging : nacac,bais
+Profile Metapod Staging : nacac,bais
+Profile Pikachu Staging : nacac, bais</p>
+     */
+    public static Object ConventionProvider
      
     /**
      * <p></p>
@@ -195,6 +204,7 @@ Profile Pikachu Staging : albrightsandbox , bbtesting</p>
             StudentUrlCheck = selectedVariables['StudentUrlCheck']
             createdConventionName = selectedVariables['createdConventionName']
             InstitutionValue = selectedVariables['InstitutionValue']
+            ConventionProvider = selectedVariables['ConventionProvider']
             MainStagingMobiUrl = selectedVariables['MainStagingMobiUrl']
             CharizardMobiUrl = selectedVariables['CharizardMobiUrl']
             PikachuMobiUrl = selectedVariables['PikachuMobiUrl']

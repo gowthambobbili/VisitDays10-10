@@ -781,6 +781,53 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDuration"(
 }
 
 
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.convertString2Date"(
+    	String value	
+     , 	String dateTimeFormat	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).convertString2Date(
+        	value
+         , 	dateTimeFormat)
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDateTime"(
+    	String timeZoneId	
+     , 	String dateTimeFormat	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentDateTime(
+        	timeZoneId
+         , 	dateTimeFormat)
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPreviousDateTime"(
+    	int noOfDays	
+     , 	String timeZoneId	
+     , 	String dateTimeFormat	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPreviousDateTime(
+        	noOfDays
+         , 	timeZoneId
+         , 	dateTimeFormat)
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.setDefaultTimeZone"(
+    	String timeZoneId	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).setDefaultTimeZone(
+        	timeZoneId)
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getFutureDateTime"(
+    	int noOfDays	
+     , 	String timeZoneId	
+     , 	String dateTimeFormat	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getFutureDateTime(
+        	noOfDays
+         , 	timeZoneId
+         , 	dateTimeFormat)
+}
+
+
 def static "com.kms.katalon.keyword.datetime.DateTimeUtility.addDays"(
     	String stringDate	
      , 	String dateFormat	
@@ -789,34 +836,6 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.addDays"(
         	stringDate
          , 	dateFormat
          , 	amount)
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentMonth"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentMonth()
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentYear"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentYear()
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getFutureTime"(
-    	int hrs	
-     , 	int minute	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getFutureTime(
-        	hrs
-         , 	minute)
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPastTime"(
-    	int hrs	
-     , 	int minute	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPastTime(
-        	hrs
-         , 	minute)
 }
 
 
@@ -836,50 +855,31 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDate"() {
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getFutureDateTime"(
-    	int noOfDays	
-     , 	String timeZoneId	
-     , 	String dateTimeFormat	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getFutureDateTime(
-        	noOfDays
-         , 	timeZoneId
-         , 	dateTimeFormat)
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentMonth"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentMonth()
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPreviousDateTime"(
-    	int noOfDays	
-     , 	String timeZoneId	
-     , 	String dateTimeFormat	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPreviousDateTime(
-        	noOfDays
-         , 	timeZoneId
-         , 	dateTimeFormat)
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getFutureTime"(
+    	int hrs	
+     , 	int minute	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getFutureTime(
+        	hrs
+         , 	minute)
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.convertString2Date"(
-    	String value	
-     , 	String dateTimeFormat	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).convertString2Date(
-        	value
-         , 	dateTimeFormat)
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentYear"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentYear()
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.setDefaultTimeZone"(
-    	String timeZoneId	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).setDefaultTimeZone(
-        	timeZoneId)
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDateTime"(
-    	String timeZoneId	
-     , 	String dateTimeFormat	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentDateTime(
-        	timeZoneId
-         , 	dateTimeFormat)
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPastTime"(
+    	int hrs	
+     , 	int minute	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPastTime(
+        	hrs
+         , 	minute)
 }
 
 
@@ -2048,6 +2048,13 @@ def static "com.CommonUtilities.AddQuestion.getRandomQuestionName"() {
 }
 
 
+def static "com.CommonUtilities.Testing.CreateDailyVisitVisitWithStartTimeWithIn30Minutes"(
+    	String VisitType	) {
+    (new com.CommonUtilities.Testing()).CreateDailyVisitVisitWithStartTimeWithIn30Minutes(
+        	VisitType)
+}
+
+
 def static "com.CommonUtilities.CreateLiveSession.selectConvention"() {
     (new com.CommonUtilities.CreateLiveSession()).selectConvention()
 }
@@ -2090,13 +2097,6 @@ def static "com.CommonUtilities.CreateLiveSession.enterZoomIdAndAddAssigneeInclu
 }
 
 
-def static "com.CommonUtilities.Testing.CreateDailyVisitVisitWithStartTimeWithIn30Minutes"(
-    	String VisitType	) {
-    (new com.CommonUtilities.Testing()).CreateDailyVisitVisitWithStartTimeWithIn30Minutes(
-        	VisitType)
-}
-
-
 def static "com.CommonUtilities.MobiRegistrationWithInternationalNumberAndVerification.RegisterAnIndividualWithInternationalNumberAndVerifyValidation"() {
     (new com.CommonUtilities.MobiRegistrationWithInternationalNumberAndVerification()).RegisterAnIndividualWithInternationalNumberAndVerifyValidation()
 }
@@ -2132,6 +2132,26 @@ def static "com.CommonUtilities.Justfortesting.EventsTest"() {
 }
 
 
+def static "com.CommonUtilities.DynamicObjectCreation.CreateObjectForCheckboxInAddVisitToItineraryModal"(
+    	String ObjectName	
+     , 	String CheckBoxName	
+     , 	String VisitTypeName	) {
+    (new com.CommonUtilities.DynamicObjectCreation()).CreateObjectForCheckboxInAddVisitToItineraryModal(
+        	ObjectName
+         , 	CheckBoxName
+         , 	VisitTypeName)
+}
+
+
+def static "com.CommonUtilities.DynamicObjectCreation.CreateRegistrantObjectAndVerifyPresence"(
+    	String StudentName	
+     , 	String ObjectName	) {
+    (new com.CommonUtilities.DynamicObjectCreation()).CreateRegistrantObjectAndVerifyPresence(
+        	StudentName
+         , 	ObjectName)
+}
+
+
 def static "com.CommonUtilities.CreateMeeting.getConvention"() {
     (new com.CommonUtilities.CreateMeeting()).getConvention()
 }
@@ -2154,26 +2174,6 @@ def static "com.CommonUtilities.CreateMeeting.enterZoomId"() {
 
 def static "com.CommonUtilities.CreateMeeting.selectDateDropDownFormat"() {
     (new com.CommonUtilities.CreateMeeting()).selectDateDropDownFormat()
-}
-
-
-def static "com.CommonUtilities.DynamicObjectCreation.CreateObjectForCheckboxInAddVisitToItineraryModal"(
-    	String ObjectName	
-     , 	String CheckBoxName	
-     , 	String VisitTypeName	) {
-    (new com.CommonUtilities.DynamicObjectCreation()).CreateObjectForCheckboxInAddVisitToItineraryModal(
-        	ObjectName
-         , 	CheckBoxName
-         , 	VisitTypeName)
-}
-
-
-def static "com.CommonUtilities.DynamicObjectCreation.CreateRegistrantObjectAndVerifyPresence"(
-    	String StudentName	
-     , 	String ObjectName	) {
-    (new com.CommonUtilities.DynamicObjectCreation()).CreateRegistrantObjectAndVerifyPresence(
-        	StudentName
-         , 	ObjectName)
 }
 
 

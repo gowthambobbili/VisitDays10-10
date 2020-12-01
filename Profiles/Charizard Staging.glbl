@@ -110,7 +110,7 @@
       <name>institutionId</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>https://bais-charizard.visitdays.vercel.app/, https://nacac-charizard.visitdays.vercel.app/</description>
       <initValue>'https://nacac-charizard.visitdays.vercel.app/'</initValue>
       <name>studenturl</name>
    </GlobalVariableEntity>
@@ -128,5 +128,10 @@
       <description></description>
       <initValue>''</initValue>
       <name>InstitutionValue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>nacac,bais</description>
+      <initValue>'nacac'</initValue>
+      <name>ConventionProvider</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

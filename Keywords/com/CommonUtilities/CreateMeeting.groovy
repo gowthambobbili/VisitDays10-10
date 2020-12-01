@@ -44,17 +44,20 @@ public class CreateMeeting {
 	//	def meetdate=meetdates.substring(0,2)
 
 	def zoomId="https://zoom.us/j/12345678"
+	
 
 	@Keyword
 	def getConvention() {
 
 		WebUI.click(findTestObject('Object Repository/HomePageElements/PersonIcon'))
 
-		WebUI.click(findTestObject('Object Repository/HomePageElements/NacacConventionslink'))
+		WebUI.click(findTestObject('Object Repository/HomePageElements/NacacConventionslink',['ConventionProvider':GlobalVariable.ConventionProvider]))
 
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/Conventionsleftnav'))
 
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/LiveSessionleftNavInSubMenu'))
+		
+		WebUI.delay(5)
 
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/CreateButtonInLiveSessions'))
 

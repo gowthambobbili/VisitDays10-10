@@ -32,7 +32,7 @@
    <testCaseLink>
       <guid>de659178-96ce-440f-89f8-a6dcd6f92cb6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Conventions/AddVideoInAdminAndVerifyInStudentApp</testCaseId>
    </testCaseLink>
    <testCaseLink>

@@ -85,7 +85,9 @@ WebUI.waitForElementPresent(findTestObject('HomePageElements/ProfileAvatar'), 0)
 
 WebUI.click(findTestObject('Object Repository/HomePageElements/PersonIcon'))
 
-WebUI.click(findTestObject('Object Repository/HomePageElements/NacacConventionslink'))
+WebUI.click(findTestObject('Object Repository/HomePageElements/NacacConventionslink',['ConventionProvider':GlobalVariable.ConventionProvider]))
+
+WebUI.delay(4)
 
 WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/ProspectsLeftnav'))
 

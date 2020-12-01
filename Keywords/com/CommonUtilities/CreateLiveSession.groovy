@@ -9,6 +9,8 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+import internal.GlobalVariable
+
 
 public class CreateLiveSession {
 	Random rd=new Random()
@@ -32,14 +34,17 @@ public class CreateLiveSession {
 	def sessionname="TestSession"+num
 	def ZoomId="https://zoom.us/j/12345678"
 	def attachment="https://visitdays.com/"
+	def providerName=GlobalVariable.ConventionProvider
 	//	def conName=GlobalVariable.createdConventionName
 	@Keyword
 	def selectConvention() {
 		WebUI.click(findTestObject('Object Repository/HomePageElements/PersonIcon'))
 
-		WebUI.click(findTestObject('Object Repository/HomePageElements/NacacConventionslink'))
+		WebUI.click(findTestObject('Object Repository/HomePageElements/NacacConventionslink',['ConventionProvider':providerName]))
 
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/Conventionsleftnav'))
+		
+		WebUI.delay(3)
 
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/CreateButtonInLiveSessions'))
 
@@ -106,6 +111,12 @@ public class CreateLiveSession {
 
 		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtStartTime'),meridian)
 
+		if(hours=="11" && meridian=="P")
+		{
+			endTimeMeridian="A";
+			meetdate=tomorowdate;
+		}
+
 		if(WebUI.verifyElementPresent(findTestObject('Object Repository/ConventionsPageAdmin/DateFieldAtEndTime'), 0, FailureHandling.OPTIONAL))
 		{
 			WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/DateFieldAtEndTime'),meetdate)
@@ -136,11 +147,17 @@ public class CreateLiveSession {
 
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtStartTime'))
 
-		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtStartTime'),"12")
+		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtStartTime'),hours)
 
 		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtStartTime'),"00")
 
-		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtStartTime'),'a')
+		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtStartTime'),meridian)
+
+		if(hours=="11" && meridian=="P")
+		{
+			endTimeMeridian="A";
+			meetdate=tomorowdate;
+		}
 
 		if(WebUI.verifyElementPresent(findTestObject('Object Repository/ConventionsPageAdmin/DateFieldAtEndTime'), 0, FailureHandling.OPTIONAL))
 		{
@@ -148,11 +165,11 @@ public class CreateLiveSession {
 
 			WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtEndTime'))
 
-			WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtEndTime'),"11")
+			WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtEndTime'),endHours)
 
-			WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtEndTime'),"45")
+			WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtEndTime'),"00")
 
-			WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtEndTime'),"p")
+			WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/TimeFieldAtEndTime'),endTimeMeridian)
 		}
 		return sessionname
 	}
@@ -222,20 +239,22 @@ public class CreateLiveSession {
 
 		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/CapacityField'),"5")
 
-		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/ClickOnTagsDropDown'))
+		if(WebUI.verifyElementPresent(findTestObject('Object Repository/ConventionsPageAdmin/ClickOnTagsDropDown'),3,FailureHandling.OPTIONAL))
+		{
+			WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/ClickOnTagsDropDown'))
 
-		WebUI.delay(4)
+			WebUI.delay(4)
 
-		def tagsCount=WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ConventionsPageAdmin/SelectTagsdropDownInSessionsPage'),0).size()
+			def tagsCount=WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ConventionsPageAdmin/SelectTagsdropDownInSessionsPage'),0).size()
 
-		def tagNumber=rd3.nextInt(tagsCount)
+			def tagNumber=rd3.nextInt(tagsCount)
 
-		def tagName=WebUI.getText(findTestObject('Object Repository/ConventionsPageAdmin/selectTagsDropsessions',['tagsCount':tagsCount]))
+			def tagName=WebUI.getText(findTestObject('Object Repository/ConventionsPageAdmin/selectTagsDropsessions',['tagsCount':tagsCount]))
 
-		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/selectTagsDropsessions',['tagsCount':tagsCount]))
+			WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/selectTagsDropsessions',['tagsCount':tagsCount]))
 
-		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/AddButtonOfTagsDrop'))
-
+			WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/AddButtonOfTagsDrop'))
+		}
 		WebUI.scrollToElement(findTestObject('Object Repository/ConventionsPageAdmin/AssigneesDropDown'),0,FailureHandling.OPTIONAL)
 
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/AssigneesDropDown'))
@@ -275,19 +294,26 @@ public class CreateLiveSession {
 
 		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/CapacityField'),"5")
 
-		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/ClickOnTagsDropDown'))
+		def tagName
 
-		WebUI.delay(4)
+		if(WebUI.verifyElementPresent(findTestObject('Object Repository/ConventionsPageAdmin/ClickOnTagsDropDown'),3,FailureHandling.OPTIONAL))
+		{
 
-		def tagsCount=WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ConventionsPageAdmin/SelectTagsdropDownInSessionsPage'),0).size()
+			WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/ClickOnTagsDropDown'))
 
-		def tagNumber=rd.nextInt(tagsCount)
+			WebUI.delay(4)
 
-		def tagName=WebUI.getText(findTestObject('Object Repository/ConventionsPageAdmin/selectTagsDropsessions',['tagsCount':tagsCount]))
+			def tagsCount=WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ConventionsPageAdmin/SelectTagsdropDownInSessionsPage'),0).size()
 
-		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/selectTagsDropsessions',['tagsCount':tagsCount]))
+			def tagNumber=rd.nextInt(tagsCount)
 
-		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/AddButtonOfTagsDrop'))
+			tagName=WebUI.getText(findTestObject('Object Repository/ConventionsPageAdmin/selectTagsDropsessions',['tagsCount':tagsCount]))
+
+			WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/selectTagsDropsessions',['tagsCount':tagsCount]))
+
+			WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/AddButtonOfTagsDrop'))
+
+		}
 
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/AssigneesDropDown'))
 
@@ -317,12 +343,16 @@ public class CreateLiveSession {
 
 		WebUI.sendKeys(findTestObject('Object Repository/ConventionsPageAdmin/AttachmentName'),"VisitDays")
 
+		WebUI.delay(3)
+
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/SaveButton'))
+
+		WebUI.delay(3)
+
+		return tagName
 
 		//		WebUI.waitForElementNotPresent(findTestObject('Object Repository/ConventionsPageAdmin/SaveButton'), 0)
 
-		WebUI.delay(5)
 
-		return tagName
 	}
 }

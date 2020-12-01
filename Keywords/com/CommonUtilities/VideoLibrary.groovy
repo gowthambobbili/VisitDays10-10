@@ -30,7 +30,7 @@ public class VideoLibrary {
 	def addVideoToVideoLibrary() {
 		WebUI.click(findTestObject('Object Repository/HomePageElements/PersonIcon'))
 
-		WebUI.click(findTestObject('Object Repository/HomePageElements/NacacConventionslink'))
+		WebUI.click(findTestObject('Object Repository/HomePageElements/NacacConventionslink',['ConventionProvider':GlobalVariable.ConventionProvider]))
 
 		WebUI.click(findTestObject('Object Repository/ConventionsPageAdmin/Conventionsleftnav'))
 

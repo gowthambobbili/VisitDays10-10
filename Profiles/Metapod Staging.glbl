@@ -110,8 +110,8 @@
       <name>institutionId</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'nacac-metapod.visitdays.vercel.app/'</initValue>
+      <description>https://bais-metapod.visitdays.vercel.app/</description>
+      <initValue>'https://nacac-metapod.visitdays.vercel.app/'</initValue>
       <name>studenturl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -128,5 +128,10 @@
       <description></description>
       <initValue>''</initValue>
       <name>InstitutionValue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>nacac,bais</description>
+      <initValue>'nacac'</initValue>
+      <name>ConventionProvider</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
